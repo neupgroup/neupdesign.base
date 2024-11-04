@@ -1,0 +1,27 @@
+// Property for section.
+.section, section {
+  @media screen and (max-width: 320px) {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  @media screen and (max-width: 1440px) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+}
