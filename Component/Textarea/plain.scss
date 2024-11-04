@@ -1,0 +1,32 @@
+@use "./../../base/_index" as base;
+
+
+$textarea-text-color: base.$color_m-dynamic-15;
+$textarea-background-color: base.$color_m-dynamic-99;
+
+$textarea-border-color: base.$color_m-dynamic-50;
+$textarea-border-color--hover: base.$color_m-dynamic-40;
+$textarea-border-color--active: base.$color_m-dynamic-20;
+
+
+// Style for input fields.
+textarea {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  color: $textarea-text-color;
+  background-color: $textarea-background-color;
+  border: 1px solid $textarea-border-color;
+  border-radius: 8px;
+  transition: all 300ms ease;
+
+  &:hover {
+    border: 1px solid $textarea-border-color--hover;
+  }
+
+  &:focus, &:active{
+    border: 1px solid $textarea-border-color--active;
+  }
+
+}
