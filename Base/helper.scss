@@ -25,3 +25,18 @@
     padding-bottom: 128px;
   }
 }
+
+
+// Property for container.
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @media screen and (max-width: 1440px) {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+  }
+}
