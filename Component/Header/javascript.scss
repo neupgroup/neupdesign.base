@@ -1,0 +1,167 @@
+// Importing the variables and design foundation to the code.
+@use "./../../base/_index" as base;
+
+
+// Setting the height of the body.
+body {
+  height: 100%;
+}
+
+
+// SCSS code for the Header.
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  height: auto;
+  min-height: 64px;
+  box-shadow: 0 2px 4px base.$color_m-dynamic-85;
+  background-color: base.$color_m-dynamic-100;
+}
+
+.header__aod {
+  .header__logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: base.$color_m-dynamic-30;
+  }
+}
+
+
+//SCSS for Header on mobile devices
+@media screen and (max-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+
+  .header__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__aod {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__nav {
+    height: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0;
+    border-top: 0px solid base.$color_m-dynamic-50;
+    transition: all 1000ms ease;
+    gap: 8px;
+
+    .button {
+      min-height: 48px;
+      width: 100%;
+      display: flex;
+      border-radius: 16px;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+  }
+
+  .header__nav.header__nav--open {
+    border-top: 2px solid base.$color_m-dynamic-50;
+    height: 100vh;
+    padding: 16px 0;
+    opacity: 1;
+  }
+}
+
+
+
+// The SCSS for Header on bigger devices
+@media screen and (min-width: 1024px) {
+  .header {
+    overflow: hidden;
+  }
+
+  .header__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+  }
+
+  .header__aod {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .header__toggle-container {
+      display: none;
+    }
+  }
+
+  .header__nav {
+    display: flex;
+    gap: base.$spacing-less-2;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+
+// The SCSS for the toggle button.
+.header__toggle-container {
+  .header__toggle-button>.toggle-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    .toggle__bar {
+      position: absolute;
+      width: 24px;
+      height: 3px;
+      background-color: base.$color_m-dynamic-35;
+      border-radius: 8px;
+      transition: transform 1000ms ease;
+
+      &:first-child {
+        top: 6px;
+      }
+
+      &:last-child {
+        bottom: 6px;
+      }
+    }
+  }
+
+  .header__toggle-button>.toggle-icon--clicked {
+
+    .toggle__bar {
+
+      &:first-child {
+        top: calc(50% - 1.5px);
+        transform: rotate(45deg);
+      }
+
+      &:last-child {
+        bottom: calc(50% - 1.5px);
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
