@@ -35,7 +35,7 @@ $chip-transition: all 400ms ease;
   color: $chip-color;
   border: 1px solid $chip-border-color;
   background-color: $chip-background-color;
-  transition: $chip-transtition;
+  transition: $chip-transition;
 
   &:hover {
     color: $chip-color--hover;
