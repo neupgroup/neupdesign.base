@@ -1,0 +1,51 @@
+// Importing the variables and design foundation to the code.
+@use "./../../Base/index" as base;
+@use "./../../Component/index" as comp;
+
+
+// The SCSS for the hero section starts from here.
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  gap: base.$spacing-more-4;
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+
+    p {
+      margin-top: base.$spacing;
+    }
+
+    .button-container {
+      margin-top: base.$spacing;
+      display: flex;
+      gap: base.$spacing;
+    }
+  }
+
+  .hero__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+}
+
+
+@media screen and (max-width: 1440px) {
+  .hero-container {
+    gap: base.$spacing;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    gap: base.$spacing;
+  }
+}
