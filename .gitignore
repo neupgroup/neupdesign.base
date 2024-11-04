@@ -1,3 +1,6 @@
 # System generated folders to ignore.
 .idea
 .vscode
+
+# User generated folders to ignore.
+.test
