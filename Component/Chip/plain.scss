@@ -1,0 +1,62 @@
+// Importing the variables and design foundation to the code.
+@use "./../../base/_index" as base;
+
+// Variables for the color of the Chips.
+$chip-color: base.$color_m-dynamic-40;
+$chip-border-color: base.$color_m-dynamic-40;
+$chip-background-color: base.$color_n-transparent;
+
+$chip-color--hover: base.$color_m-dynamic-30;
+$chip-border-color--hover: base.$color_m-dynamic-30;
+$chip-background-color--hover: base.$color_m-dynamic-95;
+
+$chip-color--active: base.$color_m-dynamic-20;
+$chip-border-color--active: base.$color_m-dynamic-20;
+$chip-background-color--active: base.$color_m-dynamic-90;
+
+// Variable for transition on All chips
+$chip-transition: all 400ms ease;
+
+// The main code for the chips starts here.
+.chip {
+  height: 40px;
+  max-height: 40px;
+  min-width: 48px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 8px;
+  margin-top: 12px;
+
+  color: $chip-color;
+  border: 1px solid $chip-border-color;
+  background-color: $chip-background-color;
+  transition: $chip-transtition;
+
+  &:hover {
+    color: $chip-color--hover;
+    border-color: $chip-border-color--hover;
+    background-color: $chip-background-color--hover;
+  }
+
+  &:active,
+  &--active {
+    color: $chip-color--active;
+    border-color: $chip-border-color--active;
+    background-color: $chip-background-color--active;
+  }
+
+  &:disabled,
+  &--disabled,
+  &[aria-disabled="true"] {
+    color: $chip-color;
+    border-color: $chip-border-color;
+    background-color: $chip-background-color;
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+}
