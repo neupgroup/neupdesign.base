@@ -1,5 +1,5 @@
 // Importing the variables and design foundation to the code.
-@use "../../Base/index" as base;
+@use "../../Base/_index" as base;
 
 // Variables for the color of the Chips.
 $chip-color: base.$color_m-dynamic-40;

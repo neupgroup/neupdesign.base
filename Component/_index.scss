@@ -1,11 +1,12 @@
 // Requiring no support.
-@forward "./badge/plain";
-@forward "./button/plain";
-@forward "./chip/plain";
-@forward "./divider/plain";
-@forward "./image/plain";
-@forward "./textarea/plain";
-@forward "./input/plain";
+@forward "./Badge/plain";
+@forward "./Button/plain";
+@forward "./Chip/plain";
+@forward "./Divider/plain";
+@forward "./Footer/plain";
+@forward "./Image/plain";
+@forward "./Textarea/plain";
+@forward "./Input/plain";
 
 // Requiring JavaScript support.
-@forward "./header/javascript";
+@forward "./Header/javascript";
