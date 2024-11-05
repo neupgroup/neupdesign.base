@@ -27,40 +27,33 @@ $button-plain-background-color--hover: base.$color_m-dynamic-95;
 $button-plain-background-color--active: base.$color_m-dynamic-90;
 // Variable for transtition on All Buttons
 $button-transtition: all 400ms ease;
+$button-spacing: base.$spacing;
 
 
 // The main code for the buttons starts here.
 .button {
   height: 44px;
-  max-height: 44px;
-  min-width: 44px;
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: $button-spacing;
   border: none;
-  border-radius: 24px; //rounded 24, edged 0, pill 4
-  padding-left: 12px;
-  padding-right: 12px;
+  border-radius: 24px;
   gap: 8px;
 }
 
 .button__icon {
-  @extend .button;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 0px;
   max-height: 24px;
   max-width: 24px;
 }
 
 .button__label {
-  @extend .button;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-
 
 
 // For the button type solid. button==solid.
@@ -142,6 +135,7 @@ $button-transtition: all 400ms ease;
 
 // For the button type outline. button--outline.
 .button--outline {
+  @extend .button;
   color: $button-outline-color;
   border: 1px solid $button-outline-border-color;
   background-color: $button-outline-background-color;
