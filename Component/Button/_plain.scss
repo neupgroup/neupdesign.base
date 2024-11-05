@@ -15,16 +15,16 @@ $button-tint-background-color--active: base.$color_m-dynamic-60;
 // Variable to be used only for the Outline Buttons
 $button-outline-color: base.$color_m-dynamic-1;
 $button-outline-background-color: base.$color_n-transparent;
-$button-outline-background-color--hover: base.$color_m-dynamic-95;
-$button-outline-background-color--active: base.$color_m-dynamic-90;
+$button-outline-background-color--hover: base.$color_m-dynamic-90;
+$button-outline-background-color--active: base.$color_m-dynamic-80;
 $button-outline-border-color: base.$color_m-dynamic-40;
-$button-outline-border-color--hover: base.$color_m-dynamic-30;
-$button-outline-border-color--active: base.$color_m-dynamic-20;
+$button-outline-border-color--hover: base.$color_m-dynamic-90;
+$button-outline-border-color--active: base.$color_m-dynamic-80;
 // Variables to be used onlt for the Plain Buttons
 $button-plain-color: base.$color_m-dynamic-1;
 $button-plain-background-color: base.$color_n-transparent;
-$button-plain-background-color--hover: base.$color_m-dynamic-95;
-$button-plain-background-color--active: base.$color_m-dynamic-90;
+$button-plain-background-color--hover: base.$color_m-dynamic-90;
+$button-plain-background-color--active: base.$color_m-dynamic-80;
 // Variable for transtition on All Buttons
 $button-transtition: all 400ms ease;
 $button-spacing: base.$spacing;
