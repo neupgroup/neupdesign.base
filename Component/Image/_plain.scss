@@ -11,15 +11,3 @@
 img {
   border-radius: base.$radius;
 }
-
-@media screen and (max-width: 1440px) {
-  img {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  img {
-    width: 100%
-  }
-}
