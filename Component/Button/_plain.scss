@@ -1,5 +1,5 @@
 // Importing the variables and design foundation to the code.
-@use "../../Base/_index" as base;
+@use "../../Base/index" as base;
 
 
 // Variables to be used only for the Solid Buttons
@@ -43,148 +43,163 @@ $button-transtition: all 400ms ease;
   padding-left: 12px;
   padding-right: 12px;
   gap: 8px;
+}
 
-  .button__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-height: 24px;
-    max-width: 24px;
-  }
+.button__icon {
+  @extend .button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 24px;
+  max-width: 24px;
+}
 
-  .button__label{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.button__label {
+  @extend .button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  &--solid {
+
+
+// For the button type solid. button==solid.
+.button--solid {
+  @extend .button;
+  border: none;
+  color: $button-solid-color;
+  background-color: $button-solid-background-color;
+  transition: $button-transtition;
+
+  &:hover {
     border: none;
     color: $button-solid-color;
-    background-color: $button-solid-background-color;
-    transition: $button-transtition;
-
-    &:hover {
-      border: none;
-      color: $button-solid-color;
-      background-color: $button-solid-background-color--hover;
-    }
-
-    &:active,
-    &--active {
-      border: none;
-      color: $button-solid-color;
-      background-color: $button-solid-background-color--active;
-    }
-
-    &:disabled,
-    &--disabled,
-    &[aria-disabled="true"] {
-      opacity: 0.3;
-      border: none;
-      cursor: not-allowed;
-      color: $button-solid-color;
-      background-color: $button-solid-background-color;
-
-      &:hover {
-        color: inherit;
-        background-color: inherit;
-      }
-
-      &:active {
-        color: inherit;
-        background-color: inherit;
-      }
-    }
+    background-color: $button-solid-background-color--hover;
   }
 
-  &--tint {
+  &:active,
+  &--active {
+    border: none;
+    color: $button-solid-color;
+    background-color: $button-solid-background-color--active;
+  }
+
+  &:disabled,
+  &--disabled,
+  &[aria-disabled="true"] {
+    opacity: 0.3;
+    border: none;
+    cursor: not-allowed;
+    color: $button-solid-color;
+    background-color: $button-solid-background-color;
+
+    &:hover {
+      color: inherit;
+      background-color: inherit;
+    }
+
+    &:active {
+      color: inherit;
+      background-color: inherit;
+    }
+  }
+}
+
+
+// For the button type tint. button--tint.
+.button--tint {
+  @extend .button;
+  border: none;
+  color: $button-tint-color;
+  background-color: $button-tint-background-color;
+  transition: $button-transtition;
+
+  &:hover {
+    border: none;
+    color: $button-tint-color;
+    background-color: $button-tint-background-color--hover;
+  }
+
+  &:active,
+  &--active {
+    border: none;
+    color: $button-tint-color;
+    background-color: $button-tint-background-color--active;
+  }
+
+  &:disabled,
+  &--disabled,
+  &[aria-disabled="true"] {
     border: none;
     color: $button-tint-color;
     background-color: $button-tint-background-color;
-    transition: $button-transtition;
-
-    &:hover {
-      border: none;
-      color: $button-tint-color;
-      background-color: $button-tint-background-color--hover;
-    }
-
-    &:active,
-    &--active {
-      border: none;
-      color: $button-tint-color;
-      background-color: $button-tint-background-color--active;
-    }
-
-    &:disabled,
-    &--disabled,
-    &[aria-disabled="true"] {
-      border: none;
-      color: $button-tint-color;
-      background-color: $button-tint-background-color;
-      opacity: 0.3;
-      cursor: not-allowed;
-    }
+    opacity: 0.3;
+    cursor: not-allowed;
   }
+}
 
-  &--outline {
+
+
+// For the button type outline. button--outline.
+.button--outline {
+  color: $button-outline-color;
+  border: 1px solid $button-outline-border-color;
+  background-color: $button-outline-background-color;
+  transition: $button-transtition;
+
+  &:hover {
     color: $button-outline-color;
-    border: 1px solid $button-outline-border-color;
-    background-color: $button-outline-background-color;
-    transition: $button-transtition;
-
-    &:hover {
-      color: $button-outline-color;
-      border-color: $button-outline-border-color--hover;
-      background-color: $button-outline-background-color--hover;
-    }
-
-    &:active,
-    &--active {
-      color: $button-outline-color;
-      border-color: $button-outline-border-color--active;
-      background-color: $button-outline-background-color--active;
-    }
-
-    &:disabled,
-    &--disabled,
-    &[aria-disabled="true"] {
-      color: $button-outline-color;
-      border-color: $button-outline-border-color;
-      background-color: $button-outline-background-color;
-      opacity: 0.3;
-      cursor: not-allowed;
-    }
+    border-color: $button-outline-border-color--hover;
+    background-color: $button-outline-background-color--hover;
   }
 
-  &--plain {
+  &:active,
+  &--active {
+    color: $button-outline-color;
+    border-color: $button-outline-border-color--active;
+    background-color: $button-outline-background-color--active;
+  }
+
+  &:disabled,
+  &--disabled,
+  &[aria-disabled="true"] {
+    color: $button-outline-color;
+    border-color: $button-outline-border-color;
+    background-color: $button-outline-background-color;
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+}
+
+
+// For the button type plain. button--plain.
+.button--plain {
+  @extend .button;
+  color: $button-plain-color;
+  border: none;
+  background-color: $button-plain-background-color;
+  transition: $button-transtition;
+
+  &:hover {
+    color: $button-plain-color;
+    border: none;
+    background-color: $button-plain-background-color--hover;
+  }
+
+  &:active,
+  &--active {
+    color: $button-plain-color;
+    border: none;
+    background-color: $button-plain-background-color--active;
+  }
+
+  &:disabled,
+  &--disabled,
+  &[aria-disabled="true"] {
     color: $button-plain-color;
     border: none;
     background-color: $button-plain-background-color;
-    transition: $button-transtition;
-
-    &:hover {
-      color: $button-plain-color;
-      border: none;
-      background-color: $button-plain-background-color--hover;
-    }
-
-    &:active,
-    &--active {
-      color: $button-plain-color;
-      border: none;
-      background-color: $button-plain-background-color--active;
-    }
-
-    &:disabled,
-    &--disabled,
-    &[aria-disabled="true"] {
-      color: $button-plain-color;
-      border: none;
-      background-color: $button-plain-background-color;
-      opacity: 0.3;
-      cursor: not-allowed;
-    }
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 }
