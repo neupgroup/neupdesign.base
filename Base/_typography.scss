@@ -1,0 +1,219 @@
+h1, h2, h3, h4, h5, h6, .title-1, .title-2, .title-3, .title-4, .title-5, .title-6 {
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: -0.012em;
+    text-transform: capitalize;
+}
+
+body.minorSecond {
+    $text-base-ratio: 1.067;
+    $text-size-100 : 1rem;
+    $text-size-200 : $text-base-ratio * $text-size-100;
+    $text-size-300 : $text-base-ratio * $text-size-200;
+    $text-size-400 : $text-base-ratio * $text-size-300;
+    $text-size-500 : $text-base-ratio * $text-size-400;
+    $text-size-600 : $text-base-ratio * $text-size-500;
+    $text-size-700 : $text-base-ratio * $text-size-600;
+    $text-size-090 : calc($text-size-100 / $text-base-ratio);
+    $text-size-080 : calc($text-size-090 / $text-base-ratio);
+
+    h1,
+    .title-1 {
+        font-size: $text-size-700;
+    }
+
+    h2,
+    .title-2 {
+        font-size: $text-size-600;
+    }
+
+    h3,
+    .title-3 {
+        font-size: $text-size-500;
+    }
+
+    h4,
+    .title-4 {
+        font-size: $text-size-400;
+    }
+
+    h5,
+    .title-5 {
+        font-size: $text-size-300;
+    }
+
+    h6,
+    .title-6 {
+        font-size: $text-size-200;
+    }
+
+    p,
+    .body {
+        font-size: $text-size-100;
+    }
+
+    .caption,
+    .overhead {
+        font-size: $text-size-090;
+    }
+}
+
+body.majorSecond {
+    $text-base-ratio: 1.125;
+    $text-size-100 : 1rem;
+    $text-size-200 : $text-base-ratio * $text-size-100;
+    $text-size-300 : $text-base-ratio * $text-size-200;
+    $text-size-400 : $text-base-ratio * $text-size-300;
+    $text-size-500 : $text-base-ratio * $text-size-400;
+    $text-size-600 : $text-base-ratio * $text-size-500;
+    $text-size-700 : $text-base-ratio * $text-size-600;
+    $text-size-090 : calc($text-size-100 / $text-base-ratio);
+    $text-size-080 : calc($text-size-090 / $text-base-ratio);
+
+    h1,
+    .title-1 {
+        font-size: $text-size-700;
+    }
+
+    h2,
+    .title-2 {
+        font-size: $text-size-600;
+    }
+
+    h3,
+    .title-3 {
+        font-size: $text-size-500;
+    }
+
+    h4,
+    .title-4 {
+        font-size: $text-size-400;
+    }
+
+    h5,
+    .title-5 {
+        font-size: $text-size-300;
+    }
+
+    h6,
+    .title-6 {
+        font-size: $text-size-200;
+    }
+
+    p,
+    .body {
+        font-size: $text-size-100;
+    }
+
+    .caption,
+    .overhead {
+        font-size: $text-size-090;
+    }
+}
+
+body.minorThird {
+    $text-base-ratio: 1.2;
+    $text-size-100 : 1rem;
+    $text-size-200 : $text-base-ratio * $text-size-100;
+    $text-size-300 : $text-base-ratio * $text-size-200;
+    $text-size-400 : $text-base-ratio * $text-size-300;
+    $text-size-500 : $text-base-ratio * $text-size-400;
+    $text-size-600 : $text-base-ratio * $text-size-500;
+    $text-size-700 : $text-base-ratio * $text-size-600;
+    $text-size-090 : calc($text-size-100 / $text-base-ratio);
+    $text-size-080 : calc($text-size-090 / $text-base-ratio);
+
+    h1,
+    .title-1 {
+        font-size: $text-size-700;
+    }
+
+    h2,
+    .title-2 {
+        font-size: $text-size-600;
+    }
+
+    h3,
+    .title-3 {
+        font-size: $text-size-500;
+    }
+
+    h4,
+    .title-4 {
+        font-size: $text-size-400;
+    }
+
+    h5,
+    .title-5 {
+        font-size: $text-size-300;
+    }
+
+    h6,
+    .title-6 {
+        font-size: $text-size-200;
+    }
+
+    p,
+    .body {
+        font-size: $text-size-100;
+    }
+
+    .caption,
+    .overhead {
+        font-size: $text-size-090;
+    }
+}
+
+body.majorThird {
+    $text-base-ratio: 1.25;
+    $text-size-100 : 1rem;
+    $text-size-200 : $text-base-ratio * $text-size-100;
+    $text-size-300 : $text-base-ratio * $text-size-200;
+    $text-size-400 : $text-base-ratio * $text-size-300;
+    $text-size-500 : $text-base-ratio * $text-size-400;
+    $text-size-600 : $text-base-ratio * $text-size-500;
+    $text-size-700 : $text-base-ratio * $text-size-600;
+    $text-size-090 : calc($text-size-100 / $text-base-ratio);
+    $text-size-080 : calc($text-size-090 / $text-base-ratio);
+
+    h1,
+    .title-1 {
+        font-size: $text-size-700;
+    }
+
+    h2,
+    .title-2 {
+        font-size: $text-size-600;
+    }
+
+    h3,
+    .title-3 {
+        font-size: $text-size-500;
+    }
+
+    h4,
+    .title-4 {
+        font-size: $text-size-400;
+    }
+
+    h5,
+    .title-5 {
+        font-size: $text-size-300;
+    }
+
+    h6,
+    .title-6 {
+        font-size: $text-size-200;
+    }
+
+    p,
+    .body {
+        font-size: $text-size-100;
+    }
+
+    .caption,
+    .overhead {
+        font-size: $text-size-090;
+        text-transform: uppercase;
+    }
+}
