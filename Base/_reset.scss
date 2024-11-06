@@ -45,9 +45,19 @@ body {
   line-height: 1.5;
 }
 
+/* Body overflow, set to scroll on y-axis */
+body {
+  overflow-y: scroll;
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+}
+
+/* Remove text decoration from anchor elements */
+a {
+  text-decoration: none;
 }
 
 /* Make images easier to work with */
