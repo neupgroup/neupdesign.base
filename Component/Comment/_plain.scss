@@ -1,0 +1,37 @@
+// TODO: Use appropriate units for padding, fonts, and margin.
+
+// Import the base index file.
+@use "../../Base/index" as base;
+
+
+// Define the colors for comment.
+$comment-body-background: base.$color_m-dynamic-90;
+$comment-body-border-radius: 0.25rem;
+$comment-body-padding: 1em;
+$comment-author-weight: 600;
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-color: $comment-body-background;
+    border-radius: 0.25rem;
+    padding: $comment-body-padding;
+
+    .comment__author {
+        font-weight: $comment-author-weight;
+        font-size: 1.1rem;
+    }
+
+    .comment__body {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 0.5em;
+    }
+
+    .comment__date {
+        color: base.$color_m-dynamic-10;
+        font-size: 0.9rem;
+    }
+}
