@@ -1,0 +1,69 @@
+@use "../../Base/index" as base;
+
+.process01 {
+    .container {
+        .section__detail {
+            .section__description {
+                margin-top: 8px;
+            }
+        }
+
+        .processes {
+            margin-top: 16px;
+            display: flex;
+
+            .process {
+                padding: 16px;
+                background-color: white;
+                filter: drop-shadow(1px 1px 2px #8d8d8d);
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .process01 {
+        .container {
+            .processes {
+                flex-direction: column;
+                gap: 12px;
+
+                .process {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .process01 {
+        .container {
+            .processes {
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .process {
+                    width: calc(50% - 8px);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .process01 {
+        .container {
+            .processes {
+                flex-direction: row;
+                justify-content: space-between;
+
+                .process {
+                    width: calc(25% - 12px);
+                }
+            }
+        }
+    }
+}
