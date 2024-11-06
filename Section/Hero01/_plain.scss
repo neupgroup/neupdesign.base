@@ -2,49 +2,85 @@
 @use "../../Base/index" as base;
 
 
-// The SCSS for the hero section starts from here.
-.hero-container {
-  display: flex;
-  flex-direction: row;
-  gap: base.$spacing-more-4;
-
-  .hero__content {
+// Hero section 01 CSS.
+// For all media queries.
+section.hero01 {
+  .container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex: 1;
 
-    p {
-      margin-top: base.$spacing;
+    .hero__content {
+      .overhead {
+        text-transform: uppercase;
+      }
+
+      p {
+        max-width: 60ch;
+      }
+
+      .button-container {
+        display: flex;
+        gap: base.$whitespace-090;
+      }
     }
 
-    .button-container {
-      margin-top: base.$spacing;
-      display: flex;
-      gap: base.$spacing;
+    .hero__media {
+
+      img {
+        max-height: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
     }
   }
-
-  .hero__image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-  }
 }
-
-
-@media screen and (max-width: 1440px) {
-  .hero-container {
-    gap: base.$spacing;
-  }
-}
-
 
 @media screen and (max-width: 1024px) {
-  .hero-container {
-    flex-direction: column-reverse;
-    gap: base.$spacing;
+  .section.hero01 {
+    .container {
+      flex-direction: column-reverse;
+
+      .hero__content {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        p {
+          margin-top: base.$whitespace-100;
+        }
+
+        .button-container {
+          margin-top: base.$whitespace-200;
+        }
+
+      }
+    }
   }
+}
+
+@media screen and (min-width: 1024px) {
+  .section.hero01 {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: base.$whitespace-300;
+
+      .hero__content {
+        h1 {
+          margin-top: base.$whitespace-090;
+          margin-bottom: base.$whitespace-090;
+        }
+
+        .button-container {
+          margin-top: base.$whitespace-100;
+        }
+      }
+
+      .hero__media {
+        max-width: 50%;
+      }
+    }
+  }
+
 }
