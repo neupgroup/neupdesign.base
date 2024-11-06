@@ -1,3 +1,18 @@
+$whitespace-scale: 1.5;
+$whitespace-100: 1rem;
+$whitespace-200: $whitespace-100 * $whitespace-scale;
+$whitespace-300: $whitespace-200 * $whitespace-scale;
+$whitespace-400: $whitespace-300 * $whitespace-scale;
+$whitespace-500: $whitespace-400 * $whitespace-scale;
+$whitespace-600: $whitespace-500 * $whitespace-scale;
+$whitespace-700: $whitespace-600 * $whitespace-scale;
+$whitespace-800: $whitespace-700 * $whitespace-scale;
+$whitespace-900: $whitespace-800 * $whitespace-scale;
+$whitespace-090: calc($whitespace-100 / $whitespace-scale);
+$whitespace-080: calc($whitespace-090 / $whitespace-scale);
+$whitespace-070: calc($whitespace-080 / $whitespace-scale);
+
+
 // Spacing variables.
 $spacing: 16px;
 $spacing-less-3: 2px;
