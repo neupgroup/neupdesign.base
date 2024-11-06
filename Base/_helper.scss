@@ -1,42 +1,92 @@
-// Property for section.
-.section, section {
-  @media screen and (max-width: 320px) {
-    padding-top: 8px;
-    padding-bottom: 8px;
+// Space between sections.
+.section {
+  
+  // Under 480px
+  @media screen and (max-width: 480px) {
+      padding-top: 16em;
+      padding-bottom: 16em;
   }
 
+  // Under 768px
   @media screen and (max-width: 768px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
+      padding-top: 48px;
+      padding-bottom: 48px;
   }
 
+  // Under 1024px
   @media screen and (max-width: 1024px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+      padding-top: 64px;
+      padding-bottom: 64px;
   }
 
+  // Under 1440px
   @media screen and (max-width: 1440px) {
-    padding-top: 64px;
-    padding-bottom: 64px;
+      padding-top: 80px;
+      padding-bottom: 80px;
   }
 
+  // Above 1440px
   @media screen and (min-width: 1440px) {
-    padding-top: 128px;
-    padding-bottom: 128px;
+      padding-top: 80px;
+      padding-bottom: 80px;
+  }
+}
+
+// Spacings between consecutive sections.
+.section + .section {
+
+  // Under 480px
+  @media screen and (max-width: 480px) {
+      margin-top: 8px;
+  }
+
+  // Under 768px
+  @media screen and (max-width: 768px) {
+      margin-top: 24px;
+  }
+
+  // Under 1024px
+  @media screen and (max-width: 1024px) {
+      margin-top: 32px;
+  }
+
+  // Under 1440px
+  @media screen and (max-width: 1440px) {
+      margin-top: 40px;
+  }
+
+  // Above 1440px
+  @media screen and (min-width: 1440px) {
+      margin-top: 48px;
   }
 }
 
 
+
 // Property for container.
 .container {
-  margin: 0 auto;
-  padding: 0 16px;
+  @media screen and (max-width: 480px) {
+    max-width: calc(100% - 32px);
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 1024px) {
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+  }
 
   @media screen and (max-width: 1440px) {
-    max-width: 100%;
+    max-width: calc(100% - 56px);
+    margin: 0 auto;
   }
 
   @media screen and (min-width: 1440px) {
-    max-width: 1440px;
+    max-width: calc(1440px - 64px);
+    margin: 0 auto;
   }
 }
