@@ -1,31 +1,61 @@
+// Importing the variables and design foundation to the code.
+@use "../../Base/index" as base;
+
+
 // TODO: Need to make above title thing.
-
-.cta-container {
-  display: flex;
-  flex-direction: row;
-
-  .cta__image {
-    flex: 3;
-  }
-
-  .cta__content {
-    flex: 7;
+.cta01 {
+  .container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-    .cta__description{
-      margin-top: 8px;
-    }
+    .cta__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
 
-    .cta__button-container{
-      margin-top: 8px;
+      .cta__title {
+        margin-top: base.$whitespace-080;
+      }
+
+      .cta__description {
+        margin-top: base.$whitespace-080;
+      }
+
+      .cta__button-container {
+        margin-top: base.$whitespace-100;
+      }
     }
   }
 }
 
-@media screen and (max-width: 1024px){
-  .cta-container > .cta__image{
-    display: none;
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: start;
+    justify-content: start;
+
+    .cta__media {
+      max-width: 100%;
+    }
+
+    .cta__content {
+      margin-top: base.$whitespace-200;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .cta__content {
+      margin-top: base.$whitespace-080;
+      margin-bottom: base.$whitespace-080;
+    }
+
+    .cta__media {
+      max-width: 50%;
+    }
   }
 }
