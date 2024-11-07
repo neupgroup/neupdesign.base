@@ -1,44 +1,60 @@
-<!-- This script is required for the toggling function of the top-nav. -->
-<script src="./headerNavigation.js" defer></script>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../index.css">
+</head>
 
-<!-- This is the main HTML that uses the JS for the functioning. -->
-<header class="header">
-    <!-- Container adds the padding to the header and the header__container. -->
-    <div class="container header__container">
-        <!-- Class "header__aod" has the logo and the toggle that is always visible in the smaller devices. -->
-        <div class="header__aod">
-            <a href="#" class="header__logo">
-                <div class="logo__image">Title Here</div>
-            </a>
-            <!-- Only for the small width devices. Used with JavaScript support. -->
-            <div class="header__toggle-container">
-                <a class="button button--plain header__toggle-button">
-                    <div class="toggle toggle-icon button__icon header__toggle-icon">
-                        <div class="toggle__bar"></div>
-                        <div class="toggle__bar"></div>
-                    </div>
+<body>
+
+    <header class="header header--type-01">
+        <div class="container">
+            <!-- Class "header__aod" has the logo and the toggle that is always visible in the smaller devices. -->
+            <div class="header__aod">
+                <a href="#" class="header__logo">
+                    <div src="" class="logo__image">NeupGroup</div>
                 </a>
+                <!-- Start. -->
+                <!-- Only for the small width devices. Used with JavaScript support. -->
+                <div class="header__toggle-container">
+                    <a class="header__toggle-button button button--plain">
+                        <div class="header__toggle-icon button__icon ">
+                            <div class="toggle__bar"></div>
+                            <div class="toggle__bar"></div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Only for the small width devices. Used with JavaScript support. -->
+                <!-- End. -->
             </div>
+            <nav class="header__nav">
+                <!-- Secondary links in the navigation bar. -->
+                <a href="#" class="button button--plain button--plain--active">
+                    <div class="button__label">Clock</div>
+                </a>
+                <a href="#" class="button button--plain">
+                    <div class="button__label">Stopwatch</div>
+                </a>
+                <a href="#" class="button button--plain">
+                    <div class="button__label">Timer</div>
+                </a>
+                <a href="#" class="button button--plain">
+                    <div class="button__label">Alarm</div>
+                </a>
+                <!-- Primary links in the navigation bar. -->
+                <a href="#" class="button button--solid">
+                    <div class="button__label">Hello, Kishor!</div>
+                </a>
+            </nav>
         </div>
-        <nav class="header__nav">
-            <!-- Secondary links in the navigation bar. -->
-            <a href="#" class="button button--plain button--plain--active">
-                <div class="button__label">Link 01</div>
-            </a>
-            <a href="#" class="button button--plain">
-                <div class="button__label">Link 02</div>
-            </a>
-            <a href="#" class="button button--plain">
-                <div class="button__label">Link 03</div>
-            </a>
-            <a href="#" class="button button--plain">
-                <div class="button__label">Link 04</div>
-            </a>
-            <!-- Primary links in the navigation bar. -->
-            <a href="#" class="button button--solid">
-                <div class="button__label">Main CTA</div>
-            </a>
-        </nav>
-    </div>
-</header>
+    </header>
+
+    <!-- This script is required for the toggling function of the top-nav. -->
+    <script src="./headerNavigation.js"></script>
+
+</body>
+
+</html>
