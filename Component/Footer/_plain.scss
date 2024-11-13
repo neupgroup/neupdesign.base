@@ -1,0 +1,82 @@
+// Use the base foundation.
+@use "./Base/index" as base;
+@use "./Component/index" as component;
+
+.footer.footer--type-1 {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+
+    .footer__nav-row.footer__nav-row--links {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .footer__nav-column {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: base.$spacing-less-2;
+
+            .footer__nav-title {
+                @extend .button--plain;
+                cursor: default;
+            }
+
+            .footer__nav-items {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                gap: base.$spacing-less-3;
+            }
+        }
+    }
+
+    .footer__nav-item {
+        @extend .button--plain;
+    }
+
+    .footer__nav-row.footer__nav-row--global {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: base.$spacing-less-3;
+    }
+
+    .divider {
+        margin-top: base.$spacing;
+        margin-bottom: base.$spacing;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer.footer--type-1 {
+
+        .footer__nav-row {
+            width: 100%;
+        }
+
+        .footer__nav-row.footer__nav-row--links {
+            flex-direction: column;
+            gap: base.$spacing;
+        }
+
+        .footer__nav-items {
+            flex-direction: column;
+        }
+
+        .footer__nav-row.footer__nav-row--global {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: base.$spacing;
+            gap: base.$spacing-less-2;
+        }
+
+        .footer__nav-item {
+            justify-content: flex-start;
+        }
+    }
+}
