@@ -27,7 +27,7 @@
         .container {
             .processes {
                 flex-direction: column;
-                gap: 12px;
+                row-gap: 12px;
 
                 .process {
                     width: 100%;
@@ -42,11 +42,11 @@
         .container {
             .processes {
                 flex-direction: row;
-                justify-content: space-between;
                 flex-wrap: wrap;
+                gap: 12px;
 
                 .process {
-                    width: calc(50% - 8px);
+                    width: calc(50% - 12px);
                 }
             }
         }
@@ -58,7 +58,7 @@
         .container {
             .processes {
                 flex-direction: row;
-                justify-content: space-between;
+                gap: 12px;
 
                 .process {
                     width: calc(25% - 12px);
