@@ -1,6 +1,6 @@
 // Use the base foundation.
-@use "./Base/index" as base;
-@use "./Component/index" as component;
+@use "../../Base/index" as base;
+@use "../../Component/Button/plain" as button;
 
 .footer.footer--type-1 {
     position: sticky;
