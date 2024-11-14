@@ -1,92 +1,97 @@
 // Space between sections.
 .section {
-  
-  // Under 480px
-  @media screen and (max-width: 480px) {
-      padding-top: 16em;
-      padding-bottom: 16em;
-  }
 
-  // Under 768px
-  @media screen and (max-width: 768px) {
-      padding-top: 48px;
-      padding-bottom: 48px;
-  }
+	// Under 480px
+	@media screen and (max-width: 480px) {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
 
-  // Under 1024px
-  @media screen and (max-width: 1024px) {
-      padding-top: 64px;
-      padding-bottom: 64px;
-  }
+	// Under 768px
+	@media screen and (max-width: 768px) {
+		padding-top: 48px;
+		padding-bottom: 48px;
+	}
 
-  // Under 1440px
-  @media screen and (max-width: 1440px) {
-      padding-top: 80px;
-      padding-bottom: 80px;
-  }
+	// Under 1024px
+	@media screen and (max-width: 1024px) {
+		padding-top: 64px;
+		padding-bottom: 64px;
+	}
 
-  // Above 1440px
-  @media screen and (min-width: 1440px) {
-      padding-top: 80px;
-      padding-bottom: 80px;
-  }
+	// Under 1440px
+	@media screen and (max-width: 1440px) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	// Above 1440px
+	@media screen and (min-width: 1440px) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
 }
 
 // Spacings between consecutive sections.
-.section + .section {
+.section+.section {
 
-  // Under 480px
-  @media screen and (max-width: 480px) {
-      margin-top: 8px;
-  }
+	// Under 480px
+	@media screen and (max-width: 480px) {
+		margin-top: 8px;
+	}
 
-  // Under 768px
-  @media screen and (max-width: 768px) {
-      margin-top: 24px;
-  }
+	// Under 768px
+	@media screen and (max-width: 768px) {
+		margin-top: 24px;
+	}
 
-  // Under 1024px
-  @media screen and (max-width: 1024px) {
-      margin-top: 32px;
-  }
+	// Under 1024px
+	@media screen and (max-width: 1024px) {
+		margin-top: 32px;
+	}
 
-  // Under 1440px
-  @media screen and (max-width: 1440px) {
-      margin-top: 40px;
-  }
+	// Under 1440px
+	@media screen and (max-width: 1440px) {
+		margin-top: 40px;
+	}
 
-  // Above 1440px
-  @media screen and (min-width: 1440px) {
-      margin-top: 48px;
-  }
+	// Above 1440px
+	@media screen and (min-width: 1440px) {
+		margin-top: 48px;
+	}
+}
+
+
+.section.section-hero {
+	padding-top: calc(80px + 64px);
 }
 
 
 
 // Property for container.
 .container {
-  @media screen and (max-width: 480px) {
-    max-width: calc(100% - 32px);
-    margin: 0 auto;
-  }
+	@media screen and (max-width: 480px) {
+		max-width: calc(100% - 32px);
+		margin: 0 auto;
+	}
 
-  @media screen and (max-width: 768px) {
-    max-width: calc(100% - 40px);
-    margin: 0 auto;
-  }
+	@media screen and (max-width: 768px) {
+		max-width: calc(100% - 40px);
+		margin: 0 auto;
+	}
 
-  @media screen and (max-width: 1024px) {
-    max-width: calc(100% - 48px);
-    margin: 0 auto;
-  }
+	@media screen and (max-width: 1024px) {
+		max-width: calc(100% - 48px);
+		margin: 0 auto;
+	}
 
-  @media screen and (max-width: 1440px) {
-    max-width: calc(100% - 56px);
-    margin: 0 auto;
-  }
+	@media screen and (max-width: 1440px) {
+		max-width: calc(100% - 56px);
+		margin: 0 auto;
+	}
 
-  @media screen and (min-width: 1440px) {
-    max-width: calc(1440px - 64px);
-    margin: 0 auto;
-  }
+	@media screen and (min-width: 1440px) {
+		max-width: calc(1440px - 64px);
+		margin: 0 auto;
+	}
 }
