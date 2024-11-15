@@ -33,10 +33,8 @@ section.section-hero.section-hero--1 {
       }
     }
   }
-}
 
-@media screen and (max-width: 1024px) {
-  .section.section-hero.section-her0--1 {
+  @media screen and (max-width: 1024px) {
     .container {
       flex-direction: column-reverse;
 
@@ -56,10 +54,8 @@ section.section-hero.section-hero--1 {
       }
     }
   }
-}
 
-@media screen and (min-width: 1024px) {
-  .section.section-hero.section-hero--1 {
+  @media screen and (min-width: 1024px) {
     .container {
       flex-direction: row;
       justify-content: space-between;
