@@ -2,7 +2,7 @@
 @use "../../Base/index" as base;
 @use "../../Component/Button/plain" as button;
 
-.footer.footer--type-1 {
+footer.footer--1 {
     width: 100%;
 
     .footer__nav-row.footer__nav-row--links {
@@ -48,10 +48,8 @@
         margin-top: base.$spacing;
         margin-bottom: base.$spacing;
     }
-}
 
-@media screen and (max-width: 1024px) {
-    .footer.footer--type-1 {
+    @media screen and (max-width: 1024px) {
 
         .footer__nav-row {
             width: 100%;
