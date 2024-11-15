@@ -52,8 +52,64 @@
         </div>
     </header>
 
-    <!-- This script is required for the toggling function of the top-nav. -->
-    <script src="./headerNavigation.js"></script>
+    <script>
+        // The following are the element selectors.
+        const header = document.querySelector("header.header");
+        const toggleButton = document.querySelector(".header__toggle-container> .header__toggle-button");
+        const menuContainer = document.querySelector('.header > .container .header__nav');
+        const topNav = document.querySelector(".header");
+        const container = document.querySelector(".header > .container");
+
+        // Start of the Event Listener.
+        toggleButton.addEventListener('click', headerButtonToggle);
+        window.onload = updateHeaderButton;
+
+        function headerButtonToggle() {
+            // Make variable in Global Scope to save scroll position of user.
+            let scrollPosition = 0;
+
+            // Toggle the class lists when clicked.
+            menuContainer.classList.toggle("header__nav--open");
+            toggleButton.classList.toggle("header__toggle-button--clicked");
+            toggleButton.classList.toggle("button--plain--active");
+
+            // Check if the navigation bar is expanded.
+            if (menuContainer.classList.contains("header__nav--open")) {
+                // Remove the scrollbar of the body.
+                container.style.overflowY = 'hidden';
+                // Make the page un-scrollable but show a scrollbar.
+                topNav.style.overflowY = "hidden";
+                document.body.style.overflowY = "scroll";
+            } else {
+                // Remove the scrollbar of the header.
+                topNav.style.overflowY = "hidden";
+                // Make the page scrollable, also show the old scrollbar.
+                document.body.style.overflowY = "scroll";
+            }
+        }
+
+        function updateHeaderButton() {
+            // Get the current URL
+            let currentUrl = window.location.href;
+
+            // Normalize the current URL by removing protocol, "www", and any trailing slash
+            let normalizedCurrentUrl = currentUrl.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '').split('?')[0];
+
+            // Select all the navigation links
+            const navLinks = document.querySelectorAll('.header__nav > a');
+
+            // Loop through each link to check if it matches the current URL
+            navLinks.forEach(link => {
+                // Normalize the link URL by removing protocol, "www", and any trailing slash
+                let linkUrl = link.href.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '').split('?')[0];
+
+                // If the normalized link URL matches the normalized current URL, add the active class
+                if (linkUrl === normalizedCurrentUrl) {
+                    link.classList.add('button--plain--active');
+                }
+            });
+        }
+    </script>
 
 </body>
 
