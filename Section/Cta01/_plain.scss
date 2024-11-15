@@ -3,7 +3,7 @@
 
 
 // TODO: Need to make above title thing.
-.cta01 {
+.section.section-cta.section-cta--1 {
   .container {
     display: flex;
 
@@ -25,37 +25,37 @@
       }
     }
   }
-}
 
-@media screen and (max-width: 1024px) {
-  .container {
-    flex-direction: column-reverse;
-    align-items: start;
-    justify-content: start;
+  @media screen and (max-width: 1024px) {
+    .container {
+      flex-direction: column-reverse;
+      align-items: start;
+      justify-content: start;
 
-    .cta__media {
-      max-width: 100%;
-    }
+      .cta__media {
+        max-width: 100%;
+      }
 
-    .cta__content {
-      margin-top: base.$whitespace-200;
+      .cta__content {
+        margin-top: base.$whitespace-200;
+      }
     }
   }
-}
 
-@media screen and (min-width: 1024px) {
-  .container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  @media screen and (min-width: 1024px) {
+    .container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
 
-    .cta__content {
-      margin-top: base.$whitespace-080;
-      margin-bottom: base.$whitespace-080;
-    }
+      .cta__content {
+        margin-top: base.$whitespace-080;
+        margin-bottom: base.$whitespace-080;
+      }
 
-    .cta__media {
-      max-width: 50%;
+      .cta__media {
+        max-width: 50%;
+      }
     }
   }
 }
