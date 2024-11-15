@@ -4,7 +4,7 @@
 
 // Hero section 01 CSS.
 // For all media queries.
-section.hero01 {
+section.section-hero.section-hero--1 {
   .container {
     display: flex;
 
@@ -36,7 +36,7 @@ section.hero01 {
 }
 
 @media screen and (max-width: 1024px) {
-  .section.hero01 {
+  .section.section-hero.section-her0--1 {
     .container {
       flex-direction: column-reverse;
 
@@ -59,7 +59,7 @@ section.hero01 {
 }
 
 @media screen and (min-width: 1024px) {
-  .section.hero01 {
+  .section.section-hero.section-hero--1 {
     .container {
       flex-direction: row;
       justify-content: space-between;
