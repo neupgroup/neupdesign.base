@@ -1,0 +1,44 @@
+// TODO: Change the color of the fonts and more things.
+.section.section-article.section-article--1 {
+  .article-container {
+    .article__meta {
+      max-width: 704px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .article__cover {
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+
+      img {
+        margin-top: 32px;
+        object-fit: cover;
+        max-height: 600px;
+      }
+    }
+
+    .article__main {
+      max-width: 704px;
+      margin: 0 auto;
+      font-size: 18px;
+      padding: 24px 24px 0;
+
+      .article__paragraph {
+        padding-top: 24px;
+      }
+
+      .article__image {
+        padding-top: 24px;
+      }
+
+      .article__image-description {
+        font-size: 14px;
+        background-color: green;
+        padding: 4px;
+        border-radius: 8px;
+      }
+    }
+  }
+}
