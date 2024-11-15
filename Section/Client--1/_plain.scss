@@ -3,7 +3,7 @@
 
 
 // Client section design.
-.client01 {
+.section.section-client.section-client--1 {
   .container {
     margin-top: 24px;
 
@@ -36,23 +36,23 @@
       }
     }
   }
-}
 
 
-@media screen and (max-width: 320px) {
-  .client-group {
-    grid-template-columns: 1fr;
+  @media screen and (max-width: 320px) {
+    .client-group {
+      grid-template-columns: 1fr;
+    }
   }
-}
 
-@media screen and (min-width: 320.001px) and (max-width: 768px) {
-  .client-group {
-    grid-template-columns: repeat(2, 1fr);
+  @media screen and (min-width: 320.001px) and (max-width: 768px) {
+    .client-group {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
-}
 
-@media screen and (min-width: 768.001px) {
-  .client-group {
-    grid-template-columns: repeat(4, 1fr);
+  @media screen and (min-width: 768.001px) {
+    .client-group {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 }
