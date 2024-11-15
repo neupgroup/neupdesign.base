@@ -1,3 +1,7 @@
+// Requiring JavaScript support.
+@forward "./Header--1/_javascript";
+
+// Not requiring JavaScript support.
 @forward "./Hero--1/plain";
 @forward "./Client--1/plain";
 @forward "./Cta--1/plain";

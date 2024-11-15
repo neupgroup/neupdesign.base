@@ -2,7 +2,7 @@
 @use "../../Base/index" as base;
 
 // SCSS for the header, applicable to all screen sizes
-.header.header--type-01 {
+header.header.header--1 {
     position: fixed;
     top: 0;
     left: 0;
@@ -18,11 +18,9 @@
         font-weight: bold;
         color: base.$color_m-dynamic-30;
     }
-}
 
-// Header for mobile devices.
-@media screen and (max-width: 1024px) {
-    .header.header--type-01 {
+    // Header for mobile devices.
+    @media screen and (max-width: 1024px) {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -114,11 +112,9 @@
             opacity: 1;
         }
     }
-}
 
-// Header for bigger .
-@media screen and (min-width: 1024px) {
-    .header.header--type-01 {
+    // Header for bigger .
+    @media screen and (min-width: 1024px) {
         overflow: hidden;
 
         .container {
@@ -145,10 +141,8 @@
             align-items: center;
         }
     }
-}
 
-// SCSS for the toggle button
-.header.header--type-1 {
+    // SCSS for the toggle button
     .header__toggle-container .header__toggle-button .toggle-icon {
         position: relative;
         display: flex;
