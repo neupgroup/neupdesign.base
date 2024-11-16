@@ -1,8 +1,80 @@
 @use "../../Base/index" as base;
 
 
-.section.section-features.section-features--01 {
+.section.section-features.section-features--1 {
     .container {
         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .section__title {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: base.$spacing-less-2;
+        }
+
+        .section__description {
+            margin-bottom: base.$spacing-less-3;
+        }
+    }
+
+    .features {
+        margin-top: base.$spacing-more-1;
+        display: grid;
+
+        .feature {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            border: 1px solid rgb(202, 202, 202);
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+
+            .feature__image {
+                width: 100%;
+                height: 100%;
+            }
+
+            .feature__title {
+                font-size: 18px;
+                font-weight: 600;
+                margin-top: base.$spacing-less-2;
+            }
+
+            .feature__description {
+                margin-top: base.$spacing-less-2;
+            }
+
+            .feature__action {
+                margin-top: base.$spacing-less-3;
+                color: base.$color-m_dynamic-0;
+                text-decoration: underline;
+                font-weight: 500;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 16px;
+        }
+
+        @media screen and (min-width: 480px) and (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1440px) {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
     }
 }
