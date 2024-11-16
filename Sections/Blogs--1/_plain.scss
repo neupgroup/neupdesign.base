@@ -1,0 +1,101 @@
+// Use the following in this blogs.
+@use "../../Base/index" as base;
+@use "../../Components/index" as components;
+
+
+
+.section.section-blogs.section-blogs--1 {
+
+    .blogs {
+        display: grid;
+        gap: 16px;
+
+        .blog {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            border-radius: 16px;
+            border: 1px solid #e0e0e0;
+
+            .blog__media {
+                max-width: 100%;
+                overflow: hidden;
+
+                img {
+                    border-radius: 0px;
+                    width: 100%;
+                    height: auto;
+                    transition: transform 500ms;
+                }
+            }
+
+            .blog__content {
+                display: flex;
+                flex-direction: column;
+                padding: 16px;
+
+
+                .blog__category {
+                    @extend .chip;
+                }
+
+                .blog__title {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: black;
+                    margin-top: base.$spacing-less-1;
+                }
+
+                .blog__description {
+                    font-size: 1rem;
+                    margin-top: base.$spacing-less-1;
+                }
+
+                .blog__published-on {
+                    margin-top: base.$spacing-less-1;
+                }
+
+                .blog__read-time {
+                    @extend .caption;
+                }
+            }
+        }
+    }
+
+    .blog:hover {
+        .blog__media>img {
+            transform: scale(1.05);
+            transition: transform 500ms;
+        }
+
+        .blog__content>.blog__title {
+            color: base.$color_m-dynamic-20;
+            transition: color 500ms;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .blogs {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    @media screen and (min-width: 640px) and (max-width: 1024px) {
+        .blogs {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1440px) {
+        .blogs {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media screen and (min-width: 1440px){
+        .blogs {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
