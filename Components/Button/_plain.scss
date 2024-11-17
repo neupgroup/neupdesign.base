@@ -3,28 +3,28 @@
 
 
 // Variables to be used only for the Solid Buttons
-$button-solid-color: base.$color_m-dynamic-99;
-$button-solid-background-color: base.$color_m-dynamic-50;
-$button-solid-background-color--hover: base.$color_m-dynamic-40;
-$button-solid-background-color--active: base.$color_m-dynamic-30;
+$button-solid-color: var(--color_m-dynamic-99);
+$button-solid-background-color: var(--color_m-dynamic-50);
+$button-solid-background-color--hover: var(--color_m-dynamic-40);
+$button-solid-background-color--active: var(--color_m-dynamic-30);
 // Variables to be used only for the Tint Buttons
-$button-tint-color: base.$color_m-dynamic-1;
-$button-tint-background-color: base.$color_m-dynamic-80;
-$button-tint-background-color--hover: base.$color_m-dynamic-70;
-$button-tint-background-color--active: base.$color_m-dynamic-60;
+$button-tint-color: var(--color_m-dynamic-1);
+$button-tint-background-color: var(--color_m-dynamic-80);
+$button-tint-background-color--hover: var(--color_m-dynamic-70);
+$button-tint-background-color--active: var(--color_m-dynamic-60);
 // Variable to be used only for the Outline Buttons
-$button-outline-color: base.$color_m-dynamic-1;
-$button-outline-background-color: base.$color_n-transparent;
-$button-outline-background-color--hover: base.$color_m-dynamic-90;
-$button-outline-background-color--active: base.$color_m-dynamic-80;
-$button-outline-border-color: base.$color_m-dynamic-40;
-$button-outline-border-color--hover: base.$color_m-dynamic-90;
-$button-outline-border-color--active: base.$color_m-dynamic-80;
+$button-outline-color: var(--color_m-dynamic-1);
+$button-outline-background-color: var(--color_n-transparent);
+$button-outline-background-color--hover: var(--color_m-dynamic-90);
+$button-outline-background-color--active: var(--color_m-dynamic-80);
+$button-outline-border-color: var(--color_m-dynamic-40);
+$button-outline-border-color--hover: var(--color_m-dynamic-90);
+$button-outline-border-color--active: var(--color_m-dynamic-80);
 // Variables to be used onlt for the Plain Buttons
-$button-plain-color: base.$color_m-dynamic-1;
-$button-plain-background-color: base.$color_n-transparent;
-$button-plain-background-color--hover: base.$color_m-dynamic-90;
-$button-plain-background-color--active: base.$color_m-dynamic-80;
+$button-plain-color: var(--color_m-dynamic-1);
+$button-plain-background-color: var(--color_n-transparent);
+$button-plain-background-color--hover: var(--color_m-dynamic-90);
+$button-plain-background-color--active: var(--color_m-dynamic-80);
 // Variable for transtition on All Buttons
 $button-transtition: all 400ms ease;
 $button-spacing: base.$spacing;
@@ -41,20 +41,38 @@ $button-spacing: base.$spacing;
   border: none;
   border-radius: 24px;
   gap: 8px;
+
+  .button__icon {
+    border-radius: 0px;
+    max-height: 24px;
+    max-width: 24px;
+  }
+
+  .button__label {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
 
-.button__icon {
-  border-radius: 0px;
-  max-height: 24px;
-  max-width: 24px;
-}
 
-.button__label {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
+.button--disabled {
+  opacity: 0.3;
+  border: none;
+  cursor: not-allowed;
+  color: inherit;
+  background-color: inherit;
 
+  &:hover {
+    color: inherit;
+    background-color: inherit;
+  }
+
+  &:active {
+    color: inherit;
+    background-color: inherit;
+  }
+}
 
 // For the button type solid. button==solid.
 .button--solid {
@@ -80,21 +98,7 @@ $button-spacing: base.$spacing;
   &:disabled,
   &--disabled,
   &[aria-disabled="true"] {
-    opacity: 0.3;
-    border: none;
-    cursor: not-allowed;
-    color: $button-solid-color;
-    background-color: $button-solid-background-color;
-
-    &:hover {
-      color: inherit;
-      background-color: inherit;
-    }
-
-    &:active {
-      color: inherit;
-      background-color: inherit;
-    }
+    @extend .button--disabled;
   }
 }
 
@@ -123,11 +127,7 @@ $button-spacing: base.$spacing;
   &:disabled,
   &--disabled,
   &[aria-disabled="true"] {
-    border: none;
-    color: $button-tint-color;
-    background-color: $button-tint-background-color;
-    opacity: 0.3;
-    cursor: not-allowed;
+    @extend .button--disabled;
   }
 }
 
@@ -157,11 +157,7 @@ $button-spacing: base.$spacing;
   &:disabled,
   &--disabled,
   &[aria-disabled="true"] {
-    color: $button-outline-color;
-    border-color: $button-outline-border-color;
-    background-color: $button-outline-background-color;
-    opacity: 0.3;
-    cursor: not-allowed;
+    @extend .button--disabled;
   }
 }
 
@@ -190,10 +186,6 @@ $button-spacing: base.$spacing;
   &:disabled,
   &--disabled,
   &[aria-disabled="true"] {
-    color: $button-plain-color;
-    border: none;
-    background-color: $button-plain-background-color;
-    opacity: 0.3;
-    cursor: not-allowed;
+    @extend .button--disabled;
   }
 }

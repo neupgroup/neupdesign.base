@@ -2,17 +2,17 @@
 @use "../../Base/index" as base;
 
 // Variables for the color of the Chips.
-$chip-color: base.$color_m-dynamic-40;
-$chip-border-color: base.$color_m-dynamic-40;
-$chip-background-color: base.$color_n-transparent;
+$chip-color: var(--color_m-dynamic-40);
+$chip-border-color: var(--color_m-dynamic-40);
+$chip-background-color: var(--color_n-transparent);
 
-$chip-color--hover: base.$color_m-dynamic-30;
-$chip-border-color--hover: base.$color_m-dynamic-30;
-$chip-background-color--hover: base.$color_m-dynamic-95;
+$chip-color--hover: var(--color_m-dynamic-30);
+$chip-border-color--hover: var(--color_m-dynamic-30);
+$chip-background-color--hover: var(--color_m-dynamic-95);
 
-$chip-color--active: base.$color_m-dynamic-20;
-$chip-border-color--active: base.$color_m-dynamic-20;
-$chip-background-color--active: base.$color_m-dynamic-90;
+$chip-color--active: var(--color_m-dynamic-20);
+$chip-border-color--active: var(--color_m-dynamic-20);
+$chip-background-color--active: var(--color_m-dynamic-90);
 
 // Variable for transition on All chips
 $chip-transition: all 400ms ease;

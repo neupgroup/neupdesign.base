@@ -6,14 +6,14 @@
 .divider {
   width: 100%;
   height: 1px;
-  border-top: 2px solid base.$color_m-dynamic-60;
+  border-top: 2px solid var(--color_m-dynamic-60);
 }
 
 
 .contained-divider {
   width: 100%;
   height: 1px;
-  border-top: 2px solid base.$color_m-dynamic-60;
+  border-top: 2px solid var(--color_m-dynamic-60);
 
   @media screen and (max-width: 1440px) {
     max-width: calc(100% - 32px);

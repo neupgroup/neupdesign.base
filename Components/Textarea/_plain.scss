@@ -1,12 +1,12 @@
 @use "../../Base/_index" as base;
 
 
-$textarea-text-color: base.$color_m-dynamic-15;
-$textarea-background-color: base.$color_m-dynamic-99;
+$textarea-text-color: var(--color_m-dynamic-15);
+$textarea-background-color: var(--color_m-dynamic-99);
 
-$textarea-border-color: base.$color_m-dynamic-50;
-$textarea-border-color--hover: base.$color_m-dynamic-40;
-$textarea-border-color--active: base.$color_m-dynamic-20;
+$textarea-border-color: var(--color_m-dynamic-50);
+$textarea-border-color--hover: var(--color_m-dynamic-40);
+$textarea-border-color--active: var(--color_m-dynamic-20);
 
 
 // Style for input fields.

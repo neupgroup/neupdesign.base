@@ -5,7 +5,7 @@
 
 
 // Define the colors for comment.
-$comment-body-background: base.$color_m-dynamic-90;
+$comment-body-background: var(--color_m-dynamic-90);
 $comment-body-border-radius: 0.25rem;
 $comment-body-padding: 1em;
 $comment-author-weight: 600;
@@ -31,7 +31,7 @@ $comment-author-weight: 600;
     }
 
     .comment__date {
-        color: base.$color_m-dynamic-10;
+        color: var(--color_m-dynamic-10);
         font-size: 0.9rem;
     }
 }

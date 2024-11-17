@@ -51,7 +51,7 @@
 
             .feature__action {
                 margin-top: base.$spacing-less-3;
-                color: base.$color-m_dynamic-0;
+                color: var(--color-m_dynamic-0);
                 text-decoration: underline;
                 font-weight: 500;
             }

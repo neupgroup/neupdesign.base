@@ -70,7 +70,7 @@
         }
 
         .article__content>.article__title {
-            color: base.$color_m-dynamic-20;
+            color: var(--color_m-dynamic-20);
             transition: color 500ms;
         }
     }
