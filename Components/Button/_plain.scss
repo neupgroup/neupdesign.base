@@ -3,28 +3,28 @@
 
 
 // Variables to be used only for the Solid Buttons
-$button-solid-color: var(--color_m-dynamic-99);
-$button-solid-background-color: var(--color_m-dynamic-50);
-$button-solid-background-color--hover: var(--color_m-dynamic-40);
-$button-solid-background-color--active: var(--color_m-dynamic-30);
+$button-solid-color: var(--color-m-dynamic-99);
+$button-solid-background-color: var(--color-m-dynamic-50);
+$button-solid-background-color--hover: var(--color-m-dynamic-40);
+$button-solid-background-color--active: var(--color-m-dynamic-30);
 // Variables to be used only for the Tint Buttons
-$button-tint-color: var(--color_m-dynamic-1);
-$button-tint-background-color: var(--color_m-dynamic-80);
-$button-tint-background-color--hover: var(--color_m-dynamic-70);
-$button-tint-background-color--active: var(--color_m-dynamic-60);
+$button-tint-color: var(--color-m-dynamic-1);
+$button-tint-background-color: var(--color-m-dynamic-80);
+$button-tint-background-color--hover: var(--color-m-dynamic-70);
+$button-tint-background-color--active: var(--color-m-dynamic-60);
 // Variable to be used only for the Outline Buttons
-$button-outline-color: var(--color_m-dynamic-1);
-$button-outline-background-color: var(--color_n-transparent);
-$button-outline-background-color--hover: var(--color_m-dynamic-90);
-$button-outline-background-color--active: var(--color_m-dynamic-80);
-$button-outline-border-color: var(--color_m-dynamic-40);
-$button-outline-border-color--hover: var(--color_m-dynamic-90);
-$button-outline-border-color--active: var(--color_m-dynamic-80);
+$button-outline-color: var(--color-m-dynamic-1);
+$button-outline-background-color: var(--color-n-transparent);
+$button-outline-background-color--hover: var(--color-m-dynamic-90);
+$button-outline-background-color--active: var(--color-m-dynamic-80);
+$button-outline-border-color: var(--color-m-dynamic-40);
+$button-outline-border-color--hover: var(--color-m-dynamic-90);
+$button-outline-border-color--active: var(--color-m-dynamic-80);
 // Variables to be used onlt for the Plain Buttons
-$button-plain-color: var(--color_m-dynamic-1);
-$button-plain-background-color: var(--color_n-transparent);
-$button-plain-background-color--hover: var(--color_m-dynamic-90);
-$button-plain-background-color--active: var(--color_m-dynamic-80);
+$button-plain-color: var(--color-m-dynamic-1);
+$button-plain-background-color: var(--color-n-transparent);
+$button-plain-background-color--hover: var(--color-m-dynamic-90);
+$button-plain-background-color--active: var(--color-m-dynamic-80);
 // Variable for transtition on All Buttons
 $button-transtition: all 400ms ease;
 $button-spacing: base.$spacing;

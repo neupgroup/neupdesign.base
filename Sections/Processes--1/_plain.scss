@@ -14,8 +14,8 @@
 
             .process {
                 padding: 16px;
-                background-color: white;
-                filter: drop-shadow(1px 1px 2px #8d8d8d);
+                background-color: var(--color-m-dynamic-100);
+                filter: drop-shadow(1px 1px 4px var(--color-m-dynamic-50));
                 border-radius: 4px;
             }
         }

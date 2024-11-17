@@ -10,13 +10,13 @@ header.header.header--1 {
     z-index: 999;
     height: auto;
     min-height: 64px;
-    box-shadow: 0 2px 4px var(--color_m-dynamic-85);
-    background-color: var(--color_m-dynamic-100);
+    box-shadow: 0 2px 4px var(--color-m-dynamic-85);
+    background-color: var(--color-m-dynamic-100);
 
     .container .header__aod .header__logo {
         font-size: 24px;
         font-weight: bold;
-        color: var(--color_m-dynamic-30);
+        color: var(--color-m-dynamic-30);
     }
 
     // Header for mobile devices.
@@ -63,7 +63,7 @@ header.header.header--1 {
             position: absolute;
             width: 24px;
             height: 3px;
-            background-color: var(--color_m-dynamic-35);
+            background-color: var(--color-m-dynamic-35);
             border-radius: 8px;
             transition: transform 1000ms ease;
         }
@@ -93,7 +93,7 @@ header.header.header--1 {
             flex-direction: column;
             align-items: flex-start;
             opacity: 0;
-            border-top: 0 solid var(--color_m-dynamic-50);
+            border-top: 0 solid var(--color-m-dynamic-50);
             transition: all 1000ms ease;
             gap: 8px;
 
@@ -106,7 +106,7 @@ header.header.header--1 {
         }
 
         .header__nav--open {
-            border-top: 2px solid var(--color_m-dynamic-50);
+            border-top: 2px solid var(--color-m-dynamic-50);
             height: 100vh;
             padding: 16px 0;
             opacity: 1;
@@ -157,7 +157,7 @@ header.header.header--1 {
         position: absolute;
         width: 24px;
         height: 3px;
-        background-color: var(--color_m-dynamic-35);
+        background-color: var(--color-m-dynamic-35);
         border-radius: 8px;
         transition: transform 1000ms ease;
     }
