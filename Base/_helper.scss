@@ -32,13 +32,13 @@
 	}
 }
 
+
 section.section:nth-child(even) {
 	background-color: var(--color-m-dynamic-95);
 }
 
-
-.section.section-hero {
-	padding-top: calc(80px + 64px);
+body > section:first-of-type {
+	margin-top: 64px;
 }
 
 
