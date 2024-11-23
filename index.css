@@ -1338,6 +1338,7 @@ header.header.header--1 .container .header__aod .header__logo {
     border-top: 0 solid var(--color-m-dynamic-50);
     transition: all 1000ms ease;
     gap: 8px;
+    overflow-y: hidden;
   }
   header.header.header--1 .header__nav .button {
     width: 100%;
@@ -1350,6 +1351,7 @@ header.header.header--1 .container .header__aod .header__logo {
     height: 100vh;
     padding: 16px 0;
     opacity: 1;
+    overflow-y: scroll;
   }
 }
 @media screen and (min-width: 1024px) {

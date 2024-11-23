@@ -96,6 +96,7 @@ header.header.header--1 {
             border-top: 0 solid var(--color-m-dynamic-50);
             transition: all 1000ms ease;
             gap: 8px;
+            overflow-y: hidden;
 
             .button {
                 width: 100%;
@@ -110,6 +111,7 @@ header.header.header--1 {
             height: 100vh;
             padding: 16px 0;
             opacity: 1;
+            overflow-y: scroll;
         }
     }
 
