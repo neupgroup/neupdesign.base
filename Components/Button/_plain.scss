@@ -3,17 +3,17 @@
 
 
 // Variables to be used only for the Solid Buttons
-$button-solid-color: var(--color-m-dynamic-99);
+$button-solid-color: var(--color-m-dynamic-98);
 $button-solid-background-color: var(--color-m-dynamic-50);
 $button-solid-background-color--hover: var(--color-m-dynamic-40);
 $button-solid-background-color--active: var(--color-m-dynamic-30);
 // Variables to be used only for the Tint Buttons
-$button-tint-color: var(--color-m-dynamic-1);
+$button-tint-color: var(--color-m-dynamic-2);
 $button-tint-background-color: var(--color-m-dynamic-80);
 $button-tint-background-color--hover: var(--color-m-dynamic-70);
 $button-tint-background-color--active: var(--color-m-dynamic-60);
 // Variable to be used only for the Outline Buttons
-$button-outline-color: var(--color-m-dynamic-1);
+$button-outline-color: var(--color-m-dynamic-2);
 $button-outline-background-color: var(--color-n-transparent);
 $button-outline-background-color--hover: var(--color-m-dynamic-90);
 $button-outline-background-color--active: var(--color-m-dynamic-80);
@@ -21,7 +21,7 @@ $button-outline-border-color: var(--color-m-dynamic-40);
 $button-outline-border-color--hover: var(--color-m-dynamic-90);
 $button-outline-border-color--active: var(--color-m-dynamic-80);
 // Variables to be used onlt for the Plain Buttons
-$button-plain-color: var(--color-m-dynamic-1);
+$button-plain-color: var(--color-m-dynamic-2);
 $button-plain-background-color: var(--color-n-transparent);
 $button-plain-background-color--hover: var(--color-m-dynamic-90);
 $button-plain-background-color--active: var(--color-m-dynamic-80);
@@ -78,21 +78,47 @@ $button-spacing: base.$spacing;
 .button--solid {
   @extend .button;
   border: none;
-  color: $button-solid-color;
-  background-color: $button-solid-background-color;
   transition: $button-transtition;
+
+  @media (prefers-color-scheme: light) {
+    color: var(--color-m-dynamic-98);
+    background-color: var(--color-m-dynamic-40);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--color-m-dynamic-2);
+    background-color: var(--color-m-dynamic-70);
+  }
+
 
   &:hover {
     border: none;
-    color: $button-solid-color;
-    background-color: $button-solid-background-color--hover;
+
+    @media (prefers-color-scheme: light) {
+      color: var(--color-m-dynamic-98);
+      background-color: var(--color-m-dynamic-30);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-m-dynamic-2);
+      background-color: var(--color-m-dynamic-70);
+    }
   }
+
 
   &:active,
   &--active {
     border: none;
-    color: $button-solid-color;
-    background-color: $button-solid-background-color--active;
+
+    @media (prefers-color-scheme: light) {
+      color: var(--color-m-dynamic-98);
+      background-color: var(--color-m-dynamic-20);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-m-dynamic-2);
+      background-color: var(--color-m-dynamic-80);
+    }
   }
 
   &:disabled,
