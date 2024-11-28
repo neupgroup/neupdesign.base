@@ -1818,7 +1818,7 @@ section.section.section-team.section-team--1 .team .member .member__position {
   }
 }
 
-section.section-info--1 .section__content:first-child {
+section.section-info--1 .section__content:first-of-type {
   margin-top: 32px;
 }
 section.section-info--1 .section__content {
