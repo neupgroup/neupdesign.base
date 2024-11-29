@@ -10,3 +10,18 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+
+// Section component styles.
+section, .section, section.section {
+    .section__title {
+        margin-top: 8px;
+    }
+
+    .section__description {
+        margin-top: 16px;
+    }
+
+    .section__content {
+        margin-top: 32px;
+    }
+}

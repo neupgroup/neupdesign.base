@@ -9,24 +9,8 @@
 @forward "./Features--1/plain";
 @forward "./Processes--1/plain";
 @forward "./Footer--1/plain";
+@forward "./Form--1/plain";
 @forward "./Article--1/plain";
 @forward "./Articles--1/plain";
 @forward "./Team--1/plain";
 @forward "./Info--1/plain";
-
-
-
-// Section component styles.
-.section {
-    .section__title {
-        margin-top: 8px;
-    }
-
-    .section__description {
-        margin-top: 16px;
-    }
-
-    .section__content {
-        margin-top: 32px;
-    }
-}

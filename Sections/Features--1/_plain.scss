@@ -11,15 +11,9 @@
         .section__title {
             font-size: 32px;
             font-weight: 600;
-            margin-bottom: base.$spacing-less-2;
-        }
-
-        .section__description {
-            margin-bottom: base.$spacing-less-3;
         }
 
         .features {
-            margin-top: base.$spacing-more-1;
             display: grid;
 
             .feature {
