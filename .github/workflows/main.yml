@@ -28,7 +28,7 @@ jobs:
         server: ${{ secrets.SERVER_DESIGN_CSS__FTP_HOST }}
         username: ${{ secrets.SERVER_DESIGN_CSS__FTP_USER }}
         password: ${{ secrets.SERVER_DESIGN_CSS__FTP_PASS }}
-        local-dir: ./deploy
+        local-dir: ./deploy/
         server-dir: /
         exclude: |
           .github/
