@@ -1352,13 +1352,13 @@ header.header.header--1 .toggle__bar:last-child {
 section.section-hero.section-hero--1 .container {
   display: flex;
 }
-section.section-hero.section-hero--1 .container .hero__content .overhead {
+section.section-hero.section-hero--1 .container .hero__text .overhead {
   text-transform: uppercase;
 }
-section.section-hero.section-hero--1 .container .hero__content p {
+section.section-hero.section-hero--1 .container .hero__text p {
   max-width: 60ch;
 }
-section.section-hero.section-hero--1 .container .hero__content .button-container {
+section.section-hero.section-hero--1 .container .hero__text .button-container {
   display: flex;
   gap: 0.6666666667rem;
 }
@@ -1373,15 +1373,12 @@ section.section-hero.section-hero--1 .container .hero__media img {
   section.section-hero.section-hero--1 .container {
     flex-direction: column-reverse;
   }
-  section.section-hero.section-hero--1 .container .hero__content {
+  section.section-hero.section-hero--1 .container .hero__text {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
   }
-  section.section-hero.section-hero--1 .container .hero__content p {
-    margin-top: 1rem;
-  }
-  section.section-hero.section-hero--1 .container .hero__content .button-container {
+  section.section-hero.section-hero--1 .container .hero__text .button-container {
     margin-top: 1.5rem;
   }
 }
@@ -1392,11 +1389,7 @@ section.section-hero.section-hero--1 .container .hero__media img {
     align-items: center;
     gap: 2.25rem;
   }
-  section.section-hero.section-hero--1 .container .hero__content h1 {
-    margin-top: 0.6666666667rem;
-    margin-bottom: 0.6666666667rem;
-  }
-  section.section-hero.section-hero--1 .container .hero__content .button-container {
+  section.section-hero.section-hero--1 .container .hero__text .button-container {
     margin-top: 1rem;
   }
   section.section-hero.section-hero--1 .container .hero__media {

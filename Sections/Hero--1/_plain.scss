@@ -8,7 +8,7 @@ section.section-hero.section-hero--1 {
   .container {
     display: flex;
 
-    .hero__content {
+    .hero__text {
       .overhead {
         text-transform: uppercase;
       }
@@ -38,19 +38,14 @@ section.section-hero.section-hero--1 {
     .container {
       flex-direction: column-reverse;
 
-      .hero__content {
+      .hero__text {
         margin-top: 2rem;
         display: flex;
         flex-direction: column;
 
-        p {
-          margin-top: base.$whitespace-100;
-        }
-
         .button-container {
           margin-top: base.$whitespace-200;
         }
-
       }
     }
   }
@@ -62,12 +57,7 @@ section.section-hero.section-hero--1 {
       align-items: center;
       gap: base.$whitespace-300;
 
-      .hero__content {
-        h1 {
-          margin-top: base.$whitespace-090;
-          margin-bottom: base.$whitespace-090;
-        }
-
+      .hero__text {
         .button-container {
           margin-top: base.$whitespace-100;
         }
@@ -78,5 +68,4 @@ section.section-hero.section-hero--1 {
       }
     }
   }
-
 }
