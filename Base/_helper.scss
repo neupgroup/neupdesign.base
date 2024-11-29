@@ -1,6 +1,5 @@
 // Space between sections.
 .section {
-
 	// Under 480px
 	@media screen and (max-width: 480px) {
 		padding-top: 32px;
@@ -8,19 +7,19 @@
 	}
 
 	// Under 768px
-	@media screen and (max-width: 768px) {
+	@media screen and (min-width: 480px) and (max-width: 768px) {
 		padding-top: 48px;
 		padding-bottom: 48px;
 	}
 
 	// Under 1024px
-	@media screen and (max-width: 1024px) {
+	@media screen and (min-width: 768px) and (max-width: 1024px) {
 		padding-top: 64px;
 		padding-bottom: 64px;
 	}
 
 	// Under 1440px
-	@media screen and (max-width: 1440px) {
+	@media screen and (min-width: 1024px) and (max-width: 1440px) {
 		padding-top: 80px;
 		padding-bottom: 80px;
 	}
@@ -32,13 +31,14 @@
 	}
 }
 
-
-section.section:nth-child(even) {
-	background-color: var(--color-m-dynamic-95);
-}
-
+// For first section of the page. Header space margin.
 body > section:first-of-type {
 	margin-top: 64px;
+}
+
+// For even section.
+section.section:nth-child(even) {
+	background-color: var(--color-m-dynamic-95);
 }
 
 
