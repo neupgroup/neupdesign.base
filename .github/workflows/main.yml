@@ -1,0 +1,37 @@
+name: Deploy to Server
+
+on:
+  push:
+    tags:
+      # Trigger on updated version tags (e.g., v1.0.1, v2.0.0).
+      - 'v*'
+  # Also allow manual trigger from GitHub Actions UI.
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the repository
+      uses: actions/checkout@v2
+
+    - name: Prepare files for deployment
+      run: |
+        echo "Preparing files for deployment..."
+        mkdir deploy
+        cp index.css deploy/style.css
+
+    - name: Deploy to FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.1
+      with:
+        server: ${{ secrets.SERVER_DESIGN_CSS__FTP_HOST }}
+        username: ${{ secrets.SERVER_DESIGN_CSS__FTP_USER }}
+        password: ${{ secrets.SERVER_DESIGN_CSS__FTP_PASS }}
+        local-dir: ./deploy
+        server-dir: /
+        exclude: |
+          .github/
+
+    - name: Confirm deployment
+      run: echo "Deployment of style.css to FTP server completed successfully."
