@@ -2,29 +2,6 @@
 @use "../../Base/index" as base;
 
 
-// Variables to be used only for the Solid Buttons
-$button-solid-color: var(--color-m-dynamic-98);
-$button-solid-background-color: var(--color-m-dynamic-50);
-$button-solid-background-color--hover: var(--color-m-dynamic-40);
-$button-solid-background-color--active: var(--color-m-dynamic-30);
-// Variables to be used only for the Tint Buttons
-$button-tint-color: var(--color-m-dynamic-2);
-$button-tint-background-color: var(--color-m-dynamic-80);
-$button-tint-background-color--hover: var(--color-m-dynamic-70);
-$button-tint-background-color--active: var(--color-m-dynamic-60);
-// Variable to be used only for the Outline Buttons
-$button-outline-color: var(--color-m-dynamic-2);
-$button-outline-background-color: var(--color-n-transparent);
-$button-outline-background-color--hover: var(--color-m-dynamic-90);
-$button-outline-background-color--active: var(--color-m-dynamic-80);
-$button-outline-border-color: var(--color-m-dynamic-40);
-$button-outline-border-color--hover: var(--color-m-dynamic-90);
-$button-outline-border-color--active: var(--color-m-dynamic-80);
-// Variables to be used onlt for the Plain Buttons
-$button-plain-color: var(--color-m-dynamic-2);
-$button-plain-background-color: var(--color-n-transparent);
-$button-plain-background-color--hover: var(--color-m-dynamic-90);
-$button-plain-background-color--active: var(--color-m-dynamic-80);
 // Variable for transtition on All Buttons
 $button-transtition: all 400ms ease;
 $button-spacing: base.$spacing;
@@ -82,7 +59,7 @@ $button-spacing: base.$spacing;
 
   @media (prefers-color-scheme: light) {
     color: var(--color-m-dynamic-98);
-    background-color: var(--color-m-dynamic-40);
+    background-color: var(--color-m-dynamic-30);
   }
 
   @media (prefers-color-scheme: dark) {
@@ -96,12 +73,12 @@ $button-spacing: base.$spacing;
 
     @media (prefers-color-scheme: light) {
       color: var(--color-m-dynamic-98);
-      background-color: var(--color-m-dynamic-30);
+      background-color: var(--color-m-dynamic-20);
     }
 
     @media (prefers-color-scheme: dark) {
       color: var(--color-m-dynamic-2);
-      background-color: var(--color-m-dynamic-70);
+      background-color: var(--color-m-dynamic-80);
     }
   }
 
@@ -112,12 +89,12 @@ $button-spacing: base.$spacing;
 
     @media (prefers-color-scheme: light) {
       color: var(--color-m-dynamic-98);
-      background-color: var(--color-m-dynamic-20);
+      background-color: var(--color-m-dynamic-10);
     }
 
     @media (prefers-color-scheme: dark) {
       color: var(--color-m-dynamic-2);
-      background-color: var(--color-m-dynamic-80);
+      background-color: var(--color-m-dynamic-90);
     }
   }
 
@@ -133,21 +110,45 @@ $button-spacing: base.$spacing;
 .button--tint {
   @extend .button;
   border: none;
-  color: $button-tint-color;
-  background-color: $button-tint-background-color;
   transition: $button-transtition;
+
+  @media (prefers-color-scheme: light) {
+    color: var(--color-m-dynamic-98);
+    background-color: var(--color-m-dynamic-60);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--color-m-dynamic-2);
+    background-color: var(--color-m-dynamic-40);
+  }
 
   &:hover {
     border: none;
-    color: $button-tint-color;
-    background-color: $button-tint-background-color--hover;
+
+    @media (prefers-color-scheme: light) {
+      color: var(--color-m-dynamic-98);
+      background-color: var(--color-m-dynamic-50);
+    }
+  
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-m-dynamic-2);
+      background-color: var(--color-m-dynamic-50);
+    }
   }
 
   &:active,
   &--active {
     border: none;
-    color: $button-tint-color;
-    background-color: $button-tint-background-color--active;
+    
+    @media (prefers-color-scheme: light) {
+      color: var(--color-m-dynamic-98);
+      background-color: var(--color-m-dynamic-40);
+    }
+  
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-m-dynamic-2);
+      background-color: var(--color-m-dynamic-60);
+    }
   }
 
   &:disabled,
@@ -162,22 +163,48 @@ $button-spacing: base.$spacing;
 // For the button type outline. button--outline.
 .button--outline {
   @extend .button;
-  color: $button-outline-color;
-  border: 1px solid $button-outline-border-color;
-  background-color: $button-outline-background-color;
   transition: $button-transtition;
 
+  @media (prefers-color-scheme: light) {
+    color: var(--color-m-dynamic-2);
+    border: 1px solid var(--color-m-dynamic-20);
+    background-color: var(--color-n-transparent);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--color-m-dynamic-98);
+    border: 1px solid var(--color-m-dynamic-80);
+    background-color: var(--color-n-transparent);
+  }
+
+
   &:hover {
-    color: $button-outline-color;
-    border-color: $button-outline-border-color--hover;
-    background-color: $button-outline-background-color--hover;
+    @media (prefers-color-scheme: light) {
+      color: var(--color-m-dynamic-2);
+      border: 1px solid var(--color-m-dynamic-30);
+      background-color: var(--color-m-dynamic-80);
+    }
+  
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-m-dynamic-98);
+      border: 1px solid var(--color-m-dynamic-70);
+      background-color: var(--color-m-dynamic-20);
+    }
   }
 
   &:active,
   &--active {
-    color: $button-outline-color;
-    border-color: $button-outline-border-color--active;
-    background-color: $button-outline-background-color--active;
+    @media (prefers-color-scheme: light) {
+      color: var(--color-m-dynamic-2);
+      border: 1px solid var(--color-m-dynamic-40);
+      background-color: var(--color-m-dynamic-70);
+    }
+  
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-m-dynamic-98);
+      border: 1px solid var(--color-m-dynamic-60);
+      background-color: var(--color-m-dynamic-30);
+    }
   }
 
   &:disabled,
@@ -191,22 +218,43 @@ $button-spacing: base.$spacing;
 // For the button type plain. button--plain.
 .button--plain {
   @extend .button;
-  color: $button-plain-color;
   border: none;
-  background-color: $button-plain-background-color;
   transition: $button-transtition;
+  
+  @media (prefers-color-scheme: light) {
+    color: var(--color-m-dynamic-2);
+    background-color: var(--color-n-transparent);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--color-m-dynamic-98);
+    background-color: var(--color-n-transparent);
+  }
 
   &:hover {
-    color: $button-plain-color;
-    border: none;
-    background-color: $button-plain-background-color--hover;
+    @media (prefers-color-scheme: light) {
+      color: var(--color-m-dynamic-2);
+      background-color: var(--color-m-dynamic-80);
+    }
+  
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-m-dynamic-98);
+      background-color: var(--color-m-dynamic-20);
+    }
   }
 
   &:active,
   &--active {
-    color: $button-plain-color;
-    border: none;
-    background-color: $button-plain-background-color--active;
+    @media (prefers-color-scheme: light) {
+      color: var(--color-m-dynamic-2);
+      background-color: var(--color-m-dynamic-70);
+    }
+  
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-m-dynamic-98);
+      background-color: var(--color-m-dynamic-30);
+    }
+
   }
 
   &:disabled,
