@@ -36,9 +36,24 @@ body > section:first-of-type {
 	margin-top: 64px;
 }
 
+// For odd section.
+section.section:nth-child(odd) {
+	@media (prefers-color-scheme: light) {
+		background-color: var(--color-m-dynamic-85);
+	}
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--color-m-dynamic-15);
+	}
+}
+
 // For even section.
 section.section:nth-child(even) {
-	background-color: var(--color-m-dynamic-95);
+	@media (prefers-color-scheme: light) {
+		background-color: var(--color-m-dynamic-95);
+	}
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--color-m-dynamic-5);
+	}
 }
 
 
