@@ -8,6 +8,6 @@
 -> Got nothing more to say. 
 
 ## Contributions/Suggestions?
--> Wanna contribute, feel free to do so.
--> Suggestions are really welcomed.
--> Consider the lack of knowledge might though prevent in incorporating, but will try.
+-> Wanna contribute, feel free to do so.  
+-> Suggestions are really welcomed.  
+-> Consider the lack of knowledge might though prevent in incorporating, but will try.  
