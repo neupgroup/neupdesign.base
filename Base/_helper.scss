@@ -1,5 +1,6 @@
 // Space between sections.
 .section {
+
 	// Under 480px
 	@media screen and (max-width: 480px) {
 		padding-top: 32px;
@@ -32,27 +33,40 @@
 }
 
 // For first section of the page. Header space margin.
-body > section:first-of-type {
+body>section:first-of-type {
 	margin-top: 64px;
+}
+
+// For the body (to override).
+body {
+	@media (prefers-color-scheme: light) {
+		background-color: var(--color-m-dynamic-95);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--color-m-dynamic-5);
+	}
 }
 
 // For odd section.
 section.section:nth-child(odd) {
 	@media (prefers-color-scheme: light) {
-		background-color: var(--color-m-dynamic-85);
+		background-color: var(--color-m-dynamic-95);
 	}
+
 	@media (prefers-color-scheme: dark) {
-		background-color: var(--color-m-dynamic-15);
+		background-color: var(--color-m-dynamic-5);
 	}
 }
 
 // For even section.
 section.section:nth-child(even) {
 	@media (prefers-color-scheme: light) {
-		background-color: var(--color-m-dynamic-95);
+		background-color: var(--color-m-dynamic-85);
 	}
+
 	@media (prefers-color-scheme: dark) {
-		background-color: var(--color-m-dynamic-5);
+		background-color: var(--color-m-dynamic-15);
 	}
 }
 

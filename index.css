@@ -876,24 +876,35 @@ body > section:first-of-type {
 }
 
 @media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--color-m-dynamic-95);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-m-dynamic-5);
+  }
+}
+
+@media (prefers-color-scheme: light) {
   section.section:nth-child(odd) {
-    background-color: var(--color-m-dynamic-85);
+    background-color: var(--color-m-dynamic-95);
   }
 }
 @media (prefers-color-scheme: dark) {
   section.section:nth-child(odd) {
-    background-color: var(--color-m-dynamic-15);
+    background-color: var(--color-m-dynamic-5);
   }
 }
 
 @media (prefers-color-scheme: light) {
   section.section:nth-child(even) {
-    background-color: var(--color-m-dynamic-95);
+    background-color: var(--color-m-dynamic-85);
   }
 }
 @media (prefers-color-scheme: dark) {
   section.section:nth-child(even) {
-    background-color: var(--color-m-dynamic-5);
+    background-color: var(--color-m-dynamic-15);
   }
 }
 
