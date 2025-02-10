@@ -1309,7 +1309,7 @@ textarea:focus, textarea:active {
   }
 }
 
-input {
+button, input {
   margin-top: 12px;
   width: 100%;
   padding: 12px 16px;
@@ -1320,44 +1320,44 @@ input {
   border: 2px solid;
 }
 @media (prefers-color-scheme: light) {
-  input {
+  button, input {
     color: var(--color-m-dynamic-10);
     background-color: var(--color-m-dynamic-90);
     border-color: var(--color-m-dynamic-60);
   }
 }
 @media (prefers-color-scheme: dark) {
-  input {
+  button, input {
     color: var(--color-m-dynamic-90);
     background-color: var(--color-m-dynamic-10);
     border-color: var(--color-m-dynamic-40);
   }
 }
 @media (prefers-color-scheme: light) {
-  input:hover {
+  button:hover, input:hover {
     border-color: var(--color-m-dynamic-40);
   }
 }
 @media (prefers-color-scheme: dark) {
-  input:hover {
+  button:hover, input:hover {
     border-color: var(--color-m-dynamic-60);
   }
 }
-input:focus, input:active {
+button:focus, button:active, input:focus, input:active {
   outline: none;
 }
 @media (prefers-color-scheme: light) {
-  input:focus, input:active {
+  button:focus, button:active, input:focus, input:active {
     border-color: var(--color-m-dynamic-20);
   }
 }
 @media (prefers-color-scheme: dark) {
-  input:focus, input:active {
+  button:focus, button:active, input:focus, input:active {
     border-color: var(--color-m-dynamic-80);
   }
 }
 
-input[type=submit] {
+button, input[type=submit] {
   outline: none;
   border: none;
   padding: 0 16px;
@@ -1366,49 +1366,49 @@ input[type=submit] {
   transition: all 300ms ease;
 }
 @media (prefers-color-scheme: light) {
-  input[type=submit] {
+  button, input[type=submit] {
     color: var(--color-m-dynamic-10);
     background-color: var(--color-m-dynamic-70);
   }
 }
 @media (prefers-color-scheme: dark) {
-  input[type=submit] {
+  button, input[type=submit] {
     color: var(--color-m-dynamic-90);
     background-color: var(--color-m-dynamic-30);
   }
 }
 @media (prefers-color-scheme: light) {
-  input[type=submit]:hover {
+  button:hover, input[type=submit]:hover {
     background-color: var(--color-m-dynamic-60);
   }
 }
 @media (prefers-color-scheme: dark) {
-  input[type=submit]:hover {
+  button:hover, input[type=submit]:hover {
     background-color: var(--color-m-dynamic-40);
   }
 }
 @media (prefers-color-scheme: light) {
-  input[type=submit]:active {
+  button:active, input[type=submit]:active {
     background-color: var(--color-m-dynamic-50);
   }
 }
 @media (prefers-color-scheme: dark) {
-  input[type=submit]:active {
+  button:active, input[type=submit]:active {
     background-color: var(--color-m-dynamic-50);
   }
 }
-input[type=submit]:disabled, input[type=submit][aria-disabled=true] {
+button:disabled, button[aria-disabled=true], input[type=submit]:disabled, input[type=submit][aria-disabled=true] {
   opacity: 0.7;
   cursor: not-allowed;
 }
 @media (prefers-color-scheme: light) {
-  input[type=submit]:disabled, input[type=submit][aria-disabled=true] {
+  button:disabled, button[aria-disabled=true], input[type=submit]:disabled, input[type=submit][aria-disabled=true] {
     color: var(--color-m-dynamic-10);
     background-color: var(--color-m-dynamic-70);
   }
 }
 @media (prefers-color-scheme: dark) {
-  input[type=submit]:disabled, input[type=submit][aria-disabled=true] {
+  button:disabled, button[aria-disabled=true], input[type=submit]:disabled, input[type=submit][aria-disabled=true] {
     color: var(--color-m-dynamic-90);
     background-color: var(--color-m-dynamic-30);
   }
