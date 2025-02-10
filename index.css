@@ -1292,6 +1292,23 @@ textarea:focus, textarea:active {
   }
 }
 
+@media (prefers-color-scheme: light) {
+  ::-moz-placeholder {
+    color: var(--color-m-dynamic-20);
+  }
+  ::placeholder {
+    color: var(--color-m-dynamic-20);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  ::-moz-placeholder {
+    color: var(--color-m-dynamic-80);
+  }
+  ::placeholder {
+    color: var(--color-m-dynamic-80);
+  }
+}
+
 input {
   margin-top: 12px;
   width: 100%;
