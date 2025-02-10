@@ -7,15 +7,6 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    .section__title {
-      font-size: 20px;
-      color: var(--color-m-dynamic-15);
-    }
-
-    .section__description {
-      font-size: 16px;
-      color: var(--color-m-dynamic-25);
-    }
 
     form {
       display: flex;
@@ -30,7 +21,7 @@
       .button-container {
         display: flex;
         flex-direction: row;
-        justify-content: start;
+        justify-content: flex-start;
         flex-grow: 1;
         gap: 8px;
 

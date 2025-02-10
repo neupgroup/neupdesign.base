@@ -2,6 +2,7 @@
 // Requiring JavaScript support.
 @forward "./Header--1/_javascript";
 
+
 // Not requiring JavaScript support.
 @forward "./Hero--1/plain";
 @forward "./Clients--1/plain";
@@ -14,3 +15,27 @@
 @forward "./Articles--1/plain";
 @forward "./Team--1/plain";
 @forward "./Info--1/plain";
+
+
+// Styling for the sections.
+.section {
+    .section__title {
+        @media (prefers-color-scheme: light) {
+            color: var(--color-m-dynamic-15);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            color: var(--color-m-dynamic-85);
+        }
+    }
+
+    .section__description {
+        @media (prefers-color-scheme: light) {
+            color: var(--color-m-dynamic-25);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            color: var(--color-m-dynamic-75);
+        }
+    }
+}

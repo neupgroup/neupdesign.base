@@ -119,6 +119,49 @@ h6,
   letter-spacing: -0.012em;
   text-transform: capitalize;
 }
+@media (prefers-color-scheme: light) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .title-1,
+  .title-2,
+  .title-3,
+  .title-4,
+  .title-5,
+  .title-6 {
+    color: var(--color-m-dynamic-15);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .title-1,
+  .title-2,
+  .title-3,
+  .title-4,
+  .title-5,
+  .title-6 {
+    color: var(--color-m-dynamic-85);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: var(--color-m-dynamic-10);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--color-m-dynamic-90);
+  }
+}
 
 @media screen and (max-width: 30rem) {
   body.minorSecond h1,
@@ -1897,14 +1940,6 @@ footer.footer--1 .divider {
   flex-direction: column;
   justify-content: flex-start;
 }
-.section.section-form.section-form--1 .container .section__title {
-  font-size: 20px;
-  color: var(--color-m-dynamic-15);
-}
-.section.section-form.section-form--1 .container .section__description {
-  font-size: 16px;
-  color: var(--color-m-dynamic-25);
-}
 .section.section-form.section-form--1 .container form {
   display: flex;
   flex-direction: column;
@@ -1915,7 +1950,7 @@ footer.footer--1 .divider {
 .section.section-form.section-form--1 .container form .button-container {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
   flex-grow: 1;
   gap: 8px;
 }
@@ -2139,5 +2174,25 @@ section.section-info--1 .section__content .content__media {
   }
   section.section-info--1 .section__content .content__text {
     padding: 48px;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .section .section__title {
+    color: var(--color-m-dynamic-15);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .section .section__title {
+    color: var(--color-m-dynamic-85);
+  }
+}
+@media (prefers-color-scheme: light) {
+  .section .section__description {
+    color: var(--color-m-dynamic-25);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .section .section__description {
+    color: var(--color-m-dynamic-75);
   }
 }/*# sourceMappingURL=index.css.map */
