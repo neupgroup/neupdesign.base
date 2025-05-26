@@ -12,13 +12,13 @@ header.header.header--1 {
     min-height: 64px;
 
     @media screen and (prefers-color-scheme: dark) {
-        box-shadow: 0 2px 4px var(--color-m-dynamic-15-dark);
-        background-color: var(--color-m-dynamic-2);
+        box-shadow: 0 2px 4px var(--color-m-dynamic-5);
+        background-color: var(--color-m-dynamic-10);
     }
 
     @media screen and (prefers-color-scheme: light) {
         box-shadow: 0 2px 4px var(--color-m-dynamic-85);
-        background-color: var(--color-m-dynamic-98);
+        background-color: var(--color-m-dynamic-90);
     }
 
     .container .header__aod .header__logo {
@@ -32,7 +32,6 @@ header.header.header--1 {
         @media screen and (prefers-color-scheme: dark) {
             color: var(--color-m-dynamic-90);
         }
-
     }
 
     // Header for mobile devices.
@@ -120,6 +119,7 @@ header.header.header--1 {
             transition: all 1000ms ease;
             gap: 8px;
             overflow-y: hidden;
+            scrollbar-width: none;
 
             .button {
                 width: 100%;

@@ -1490,14 +1490,14 @@ header.header.header--1 {
 }
 @media screen and (prefers-color-scheme: dark) {
   header.header.header--1 {
-    box-shadow: 0 2px 4px var(--color-m-dynamic-15-dark);
-    background-color: var(--color-m-dynamic-2);
+    box-shadow: 0 2px 4px var(--color-m-dynamic-5);
+    background-color: var(--color-m-dynamic-10);
   }
 }
 @media screen and (prefers-color-scheme: light) {
   header.header.header--1 {
     box-shadow: 0 2px 4px var(--color-m-dynamic-85);
-    background-color: var(--color-m-dynamic-98);
+    background-color: var(--color-m-dynamic-90);
   }
 }
 header.header.header--1 .container .header__aod .header__logo {
@@ -1593,6 +1593,7 @@ header.header.header--1 .container .header__aod .header__logo {
     transition: all 1000ms ease;
     gap: 8px;
     overflow-y: hidden;
+    scrollbar-width: none;
   }
   header.header.header--1 .header__nav .button {
     width: 100%;
