@@ -1185,13 +1185,13 @@ body > section:first-of-type {
 }
 @media (prefers-color-scheme: light) {
   .button--plain, footer.footer--1 .footer__nav-row.footer__nav-row--links .footer__nav-column .footer__nav-title, footer.footer--1 .footer__nav-item {
-    color: var(--color-m-dynamic-2);
+    color: var(--color-m-dynamic-98);
     background-color: var(--color-n-transparent);
   }
 }
 @media (prefers-color-scheme: dark) {
   .button--plain, footer.footer--1 .footer__nav-row.footer__nav-row--links .footer__nav-column .footer__nav-title, footer.footer--1 .footer__nav-item {
-    color: var(--color-m-dynamic-98);
+    color: var(--color-m-dynamic-2);
     background-color: var(--color-n-transparent);
   }
 }
