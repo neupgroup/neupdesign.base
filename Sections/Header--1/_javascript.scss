@@ -10,13 +10,29 @@ header.header.header--1 {
     z-index: 999;
     height: auto;
     min-height: 64px;
-    box-shadow: 0 2px 4px var(--color-m-dynamic-85);
-    background-color: var(--color-m-dynamic-100);
+
+    @media screen and (prefers-color-scheme: dark) {
+        box-shadow: 0 2px 4px var(--color-m-dynamic-15-dark);
+        background-color: var(--color-m-dynamic-2);
+    }
+
+    @media screen and (prefers-color-scheme: light) {
+        box-shadow: 0 2px 4px var(--color-m-dynamic-85);
+        background-color: var(--color-m-dynamic-98);
+    }
 
     .container .header__aod .header__logo {
         font-size: 24px;
         font-weight: bold;
-        color: var(--color-m-dynamic-30);
+
+        @media screen and (prefers-color-scheme: light) {
+            color: var(--color-m-dynamic-10);
+        }
+
+        @media screen and (prefers-color-scheme: dark) {
+            color: var(--color-m-dynamic-90);
+        }
+
     }
 
     // Header for mobile devices.
@@ -63,9 +79,16 @@ header.header.header--1 {
             position: absolute;
             width: 24px;
             height: 3px;
-            background-color: var(--color-m-dynamic-35);
             border-radius: 8px;
             transition: transform 1000ms ease;
+
+            @media screen and (prefers-color-scheme: light) {
+                background-color: var(--color-m-dynamic-10);                
+            }
+
+            @media screen and (prefers-color-scheme: dark) {
+                background-color: var(--color-m-dynamic-90);
+            }
         }
 
         .toggle__bar:nth-child(1) {
@@ -159,7 +182,6 @@ header.header.header--1 {
         position: absolute;
         width: 24px;
         height: 3px;
-        background-color: var(--color-m-dynamic-35);
         border-radius: 8px;
         transition: transform 1000ms ease;
     }
