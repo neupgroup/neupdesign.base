@@ -1514,6 +1514,16 @@ header.header.header--1 .container .header__aod .header__logo {
     color: var(--color-m-dynamic-90);
   }
 }
+@media screen and (prefers-color-scheme: light) {
+  header.header.header--1 .container .header__aod .header__logo a {
+    color: var(--color-m-dynamic-10);
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  header.header.header--1 .container .header__aod .header__logo a {
+    color: var(--color-m-dynamic-90);
+  }
+}
 @media screen and (max-width: 1024px) {
   header.header.header--1 {
     display: flex;
