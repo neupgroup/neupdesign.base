@@ -1,0 +1,50 @@
+// Contains the styles for the grid6 component.
+@use "../../Base/index" as base;
+
+
+// Grid6 Component Styles.
+.grid6-container {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .grid-wrapper {
+        padding: 16px;
+        border-radius: 4px;
+
+        @media all and (prefers-color-scheme: dark) {
+            background-color: var(--color-m-dynamic-30);
+        }
+
+        @media all and (prefers-color-scheme: light) {
+            background-color: var(--color-m-dynamic-70);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        row-gap: 12px;
+
+        .grid-wrapper {
+            width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        flex-direction: row;
+        gap: 12px;
+
+        .grid-wrapper {
+            width: calc(50% - 12px);
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        flex-direction: row;
+        gap: 12px;
+
+        .grid-wrapper {
+            width: calc(25% - 12px);
+        }
+    }
+}
