@@ -1285,110 +1285,6 @@ body > section:first-of-type {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
-  /* Grid Item */
-  /* Hover effect on the image when the grid item is hovered */
-}
-.grid1-container .grid__item {
-  background-color: var(--color-m-dynamic-15);
-  border-radius: 8px;
-  overflow: hidden;
-  /* Crucial for clipping the zoomed image */
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  /* Indicates it's interactive */
-  /* Chips Container */
-  /* Grid Title */
-  /* Grid Description */
-  /* Grid Date */
-  /* Grid Image */
-}
-@media screen and (prefers-color-scheme: light) {
-  .grid1-container .grid__item {
-    box-shadow: 0 4px 8px var(--color-m-dynamic-5);
-    background-color: var(--color-m-dynamic-15);
-  }
-}
-@media screen and (prefers-color-scheme: light) {
-  .grid1-container .grid__item {
-    box-shadow: 0 4px 8px var(--color-m-dynamic-95);
-    background-color: var(--color-m-dynamic-85);
-  }
-}
-.grid1-container .grid__item .grid__chips {
-  padding: 15px;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.grid1-container .grid__item .grid__title {
-  font-size: 1.3em;
-  margin: 0;
-  padding: 0 15px 10px;
-}
-@media screen and (prefers-color-scheme: light) {
-  .grid1-container .grid__item .grid__title {
-    color: var(--color-m-dynamic-10);
-  }
-}
-@media screen and (prefers-color-scheme: dark) {
-  .grid1-container .grid__item .grid__title {
-    color: var(--color-m-dynamic-90);
-  }
-}
-.grid1-container .grid__item .grid__description {
-  font-size: 0.95em;
-  line-height: 1.5;
-  padding: 0 15px 10px;
-  flex-grow: 1;
-  /* Allows description to take up available space */
-}
-@media screen and (prefers-color-scheme: light) {
-  .grid1-container .grid__item .grid__description {
-    color: var(--color-m-dynamic-20);
-  }
-}
-@media screen and (prefers-color-scheme: dark) {
-  .grid1-container .grid__item .grid__description {
-    color: var(--color-m-dynamic-80);
-  }
-}
-.grid1-container .grid__item .grid__meta {
-  font-size: 0.8em;
-  padding: 0 15px 15px;
-}
-@media screen and (prefers-color-scheme: light) {
-  .grid1-container .grid__item .grid__meta {
-    color: var(--color-m-dynamic-20);
-  }
-}
-@media screen and (prefers-color-scheme: dark) {
-  .grid1-container .grid__item .grid__meta {
-    color: var(--color-m-dynamic-80);
-  }
-}
-.grid1-container .grid__item .grid__image-container {
-  width: 100%;
-  border-radius: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
-  overflow: hidden;
-}
-.grid1-container .grid__item .grid__image-container .grid__image {
-  width: 100%;
-  height: auto;
-  /* Adjust height as needed */
-  border-radius: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
-  /* Added for smooth zoom transition */
-  transition: transform 0.3s ease-in-out;
-}
-.grid1-container .grid__item:hover .grid__image {
-  transform: scale(1.1);
-  /* Zooms the image content by 10% */
 }
 
 .grid2-container {
@@ -1697,6 +1593,55 @@ body > section:first-of-type {
   }
 }
 
+/* Grid Container */
+.grid7-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+.grid7-container .grid__item {
+  border-radius: 8px;
+  overflow: hidden;
+  /* Crucial for clipping the zoomed image */
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  /* Indicates it's interactive */
+}
+.grid7-container .grid__image-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  height: 300px;
+  overflow: hidden;
+}
+.grid7-container .grid__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(100%);
+  display: block;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+.grid7-container .grid__item:hover .grid__image {
+  transform: scale(1.03);
+  filter: brightness(40%);
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+.grid7-container .grid__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: var(--color-m-dynamic-95);
+  font-size: 1.3em;
+  padding: 10px 15px;
+  font-weight: bold;
+  z-index: 2;
+}
+
 img {
   border-radius: 16px;
 }
@@ -1894,6 +1839,135 @@ button:disabled, button[aria-disabled=true], input[type=submit]:disabled, input[
 .comment .comment__date {
   color: var(--color-m-dynamic-10);
   font-size: 0.9rem;
+}
+
+/*
+=============================>
+HTML Structure for Card 1 starts.
+=============================>
+
+<div class="card-1">
+  <div class="card__image-wrapper">
+    <img src="https://themewagon.github.io/travelista/img/b2.jpg" alt="It's Classified How To Utilize Free"
+      class="card__image">
+  </div>
+  <div class="card__chips">
+    <a href="#" class="chip">Travel</a>
+    <a href="#" class="chip">Life Style</a>
+  </div>
+  <h3 class="card__title">Creative Outdoor Ads</h3>
+  <p class="card__description">Acres of Diamonds... you've read the famous story, or at least had it related to
+    you. A farmer</p>
+  <span class="card__meta">31st January,2018</span>
+</div>
+
+=============================>
+HTML Structure for Card 1 ends.
+=============================>
+*/
+/* Card Item */
+.card-1 {
+  background-color: var(--color-m-dynamic-15);
+  border-radius: 8px;
+  overflow: hidden;
+  /* Crucial for clipping the zoomed image */
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  /* Indicates it's interactive */
+  /* Chips Container */
+  /* Card Title */
+  /* Card Description */
+  /* Card Date */
+  /* Card Image */
+  /* Hover effect on the image when the card item is hovered */
+}
+@media screen and (prefers-color-scheme: light) {
+  .card-1 {
+    box-shadow: 0 4px 8px var(--color-m-dynamic-5);
+    background-color: var(--color-m-dynamic-15);
+  }
+}
+@media screen and (prefers-color-scheme: light) {
+  .card-1 {
+    box-shadow: 0 4px 8px var(--color-m-dynamic-95);
+    background-color: var(--color-m-dynamic-85);
+  }
+}
+.card-1 .card__chips {
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.card-1 .card__title {
+  font-size: 1.3em;
+  margin: 0;
+  padding: 0 15px 10px;
+}
+@media screen and (prefers-color-scheme: light) {
+  .card-1 .card__title {
+    color: var(--color-m-dynamic-10);
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .card-1 .card__title {
+    color: var(--color-m-dynamic-90);
+  }
+}
+.card-1 .card__description {
+  font-size: 0.95em;
+  line-height: 1.5;
+  padding: 0 15px 10px;
+  flex-grow: 1;
+  /* Allows description to take up available space */
+}
+@media screen and (prefers-color-scheme: light) {
+  .card-1 .card__description {
+    color: var(--color-m-dynamic-20);
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .card-1 .card__description {
+    color: var(--color-m-dynamic-80);
+  }
+}
+.card-1 .card__meta {
+  font-size: 0.8em;
+  padding: 0 15px 15px;
+}
+@media screen and (prefers-color-scheme: light) {
+  .card-1 .card__meta {
+    color: var(--color-m-dynamic-20);
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .card-1 .card__meta {
+    color: var(--color-m-dynamic-80);
+  }
+}
+.card-1 .card__image-wrapper {
+  width: 100%;
+  border-radius: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  overflow: hidden;
+}
+.card-1 .card__image-wrapper .card__image {
+  width: 100%;
+  height: auto;
+  /* Adjust height as needed */
+  border-radius: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  /* Added for smooth zoom transition */
+  transition: transform 0.3s ease-in-out;
+}
+.card-1:hover .card__image {
+  /* Zooms the image content by 10% */
+  transform: scale(1.1);
 }
 
 header.header.header--1 {
@@ -2362,55 +2436,6 @@ section.section-info--1 .section__content .content__media {
     padding: 48px;
   }
 }
-/* Grid Container */
-.grid7-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
-}
-.grid7-container .grid__item {
-  border-radius: 8px;
-  overflow: hidden;
-  /* Crucial for clipping the zoomed image */
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  /* Indicates it's interactive */
-}
-.grid7-container .grid__image-wrapper {
-  position: relative;
-  width: 100%;
-  border-radius: 8px;
-  height: 300px;
-  overflow: hidden;
-}
-.grid7-container .grid__image {
-  width: 100%;
-  height: 100%;
-  border-radius: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  filter: brightness(100%);
-  display: block;
-  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
-}
-.grid7-container .grid__item:hover .grid__image {
-  transform: scale(1.03);
-  filter: brightness(40%);
-  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
-}
-.grid7-container .grid__title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: var(--color-m-dynamic-95);
-  font-size: 1.3em;
-  padding: 10px 15px;
-  font-weight: bold;
-  z-index: 2;
-}
-
 @media (prefers-color-scheme: light) {
   .section .section__title {
     color: var(--color-m-dynamic-15);
