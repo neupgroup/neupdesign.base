@@ -1490,14 +1490,14 @@ header.header.header--1 {
 }
 @media screen and (prefers-color-scheme: dark) {
   header.header.header--1 {
-    box-shadow: 0 2px 4px var(--color-m-dynamic-5);
     background-color: var(--color-m-dynamic-10);
+    box-shadow: 0 2px 8px var(--color-m-dynamic-0);
   }
 }
 @media screen and (prefers-color-scheme: light) {
   header.header.header--1 {
-    box-shadow: 0 2px 4px var(--color-m-dynamic-85);
     background-color: var(--color-m-dynamic-90);
+    box-shadow: 0 2px 8px var(--color-m-dynamic-70);
   }
 }
 header.header.header--1 .container .header__aod .header__logo {
