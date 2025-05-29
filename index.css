@@ -1408,38 +1408,6 @@ body > section:first-of-type {
   display: grid;
   gap: 1rem;
 }
-.grid4-container .grid-element {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-  border-radius: 4px;
-  overflow: hidden;
-}
-.grid4-container .grid-element .grid__image {
-  height: 160px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border-radius: 4px;
-  transition: transform 0.3s ease-in-out;
-}
-.grid4-container .grid-element:hover .grid__image {
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
-}
-@media all and (prefers-color-scheme: light) {
-  .grid4-container .grid-element {
-    background-color: var(--color-m-dynamic-100);
-    box-shadow: 0 4px 8px var(--color-m-dynamic-80);
-  }
-}
-@media all and (prefers-color-scheme: dark) {
-  .grid4-container .grid-element {
-    background-color: var(--color-m-dynamic-30);
-    box-shadow: 0 4px 8px var(--color-m-dynamic-10);
-  }
-}
 @media screen and (max-width: 320px) {
   .grid4-container {
     grid-template-columns: 1fr;
@@ -1968,6 +1936,52 @@ HTML Structure for Card 1 ends.
 .card-1:hover .card__image {
   /* Zooms the image content by 10% */
   transform: scale(1.1);
+}
+
+/*
+===============================>
+HTML Structure for Card 2 starts.
+===============================>
+
+<div class="card-2">
+    <img src="https://logowik.com/content/uploads/images/pathao3898.logowik.com.webp" class="card__image" alt="Client 01">
+</div>
+
+===============================>
+HTML Structure for Card 2 ends.
+===============================>
+*/
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.card-2 .card__image {
+  height: 160px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+}
+.card-2:hover .card__image {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+@media all and (prefers-color-scheme: light) {
+  .card-2 {
+    background-color: var(--color-m-dynamic-100);
+    box-shadow: 0 4px 8px var(--color-m-dynamic-80);
+  }
+}
+@media all and (prefers-color-scheme: dark) {
+  .card-2 {
+    background-color: var(--color-m-dynamic-30);
+    box-shadow: 0 4px 8px var(--color-m-dynamic-10);
+  }
 }
 
 header.header.header--1 {

@@ -1,0 +1,54 @@
+/*
+===============================>
+HTML Structure for Card 2 starts.
+===============================>
+
+<div class="card-2">
+    <img src="https://logowik.com/content/uploads/images/pathao3898.logowik.com.webp" class="card__image" alt="Client 01">
+</div>
+
+===============================>
+HTML Structure for Card 2 ends.
+===============================>
+*/
+
+
+
+// Dependencies:
+@use "../../Base/index" as base;
+
+
+// Card Item
+.card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+
+    .card__image {
+        height: 160px;
+        object-fit: contain;
+        border-radius: 4px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+        .card__image {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+
+    @media all and (prefers-color-scheme: light) {
+        background-color: var(--color-m-dynamic-100);
+        box-shadow: 0 4px 8px var(--color-m-dynamic-80);
+    }
+
+    @media all and (prefers-color-scheme: dark) {
+        background-color: var(--color-m-dynamic-30);
+        box-shadow: 0 4px 8px var(--color-m-dynamic-10);
+    }
+}
