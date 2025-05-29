@@ -1,5 +1,5 @@
 /* Grid Container */
-.grid-container--1 {
+.grid7-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
@@ -33,10 +33,12 @@
         transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
     }
 
-    .grid__item:hover .grid__image {
-        transform: scale(1.03);
-        filter: brightness(40%);
-        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    .grid__item:hover {
+        .grid__image {
+            transform: scale(1.03);
+            filter: brightness(40%);
+            transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+        }
     }
 
     .grid__title {
