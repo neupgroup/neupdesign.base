@@ -1,0 +1,101 @@
+// Use the following in this articles.
+@use "../Base/index" as base;
+@use "../Components/index" as components;
+
+
+
+.grid2-container {
+    display: grid;
+    gap: 16px;
+
+    .grid-wrapper {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border-radius: 16px;
+        border: 1px solid #e0e0e0;
+
+        // Hover effect for grid wrapper
+        &:hover {
+            .grid__media>img {
+                transform: scale(1.05);
+                transition: transform 500ms;
+            }
+
+            .grid__content>.grid__title {
+                color: var(--color-m-dynamic-20);
+                transition: color 500ms;
+            }
+        }
+
+        .grid__media {
+            max-width: 100%;
+            overflow: hidden;
+
+            img {
+                border-radius: 0px;
+                width: 100%;
+                height: auto;
+                transition: transform 500ms;
+            }
+        }
+
+        .grid__content {
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+
+
+            .grid__tag {
+                @extend .chip;
+            }
+
+            .grid__title {
+                font-size: 1.2rem;
+                font-weight: bold;
+                text-decoration: none;
+                color: black;
+                margin-top: base.$spacing-less-1;
+            }
+
+            .grid__description {
+                font-size: 1rem;
+                margin-top: base.$spacing-less-1;
+            }
+
+            .grid__published-on {
+                margin-top: base.$spacing-less-1;
+            }
+
+            .grid__read-time {
+                @extend .caption;
+            }
+        }
+    }
+
+    // Responsive Grid Layout
+    // 1 column for mobile, 2 columns for tablet, 3 columns for desktop, 4 columns for large desktop
+    @media screen and (max-width: 640px) {
+        .grid2-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    @media screen and (min-width: 640px) and (max-width: 1024px) {
+        .grid2-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1440px) {
+        .grid2-container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        .grid2-container {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

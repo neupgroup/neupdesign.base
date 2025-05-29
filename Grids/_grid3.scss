@@ -1,0 +1,57 @@
+@use "../Base/index" as base;
+
+
+.grid3-container {
+    display: grid;
+    grid-gap: 2rem 1rem;
+
+    .grid-wrapper {
+        .grid__media-wrapper {
+            border-radius: 16px;
+            overflow: hidden;
+
+            .grid__image {
+                width: 100%;
+                height: auto;
+                transition: transform 500ms;
+            }
+        }
+
+        .grid__title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .grid__subtitle {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-top: 0.25rem;
+        }
+
+        &:hover {
+            .grid__media-wrapper {
+                .grid__image {
+                    transform: scale(1.05);
+                    transition: transform 500ms;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media screen and (min-width: 640px) and (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (min-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
