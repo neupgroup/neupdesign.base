@@ -1,9 +1,8 @@
 // Use the following in this articles.
-@use "../Base/index" as base;
-@use "../Components/index" as components;
+@use "../../Base/index" as base;
+@use "../Chip/plain" as chip;
 
-
-
+// Grid 2 component styles.
 .grid2-container {
     display: grid;
     gap: 16px;

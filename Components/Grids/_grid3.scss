@@ -1,6 +1,7 @@
-@use "../Base/index" as base;
+// Contains styles for grid2 component.
+@use "../../Base/index" as base;
 
-
+// Grid 3 component styles.
 .grid3-container {
     display: grid;
     grid-gap: 2rem 1rem;
