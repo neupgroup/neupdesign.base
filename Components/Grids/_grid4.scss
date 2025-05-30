@@ -1,23 +1,24 @@
-// Client section design.
+/* Client section design */
 .grid4-container {
   display: grid;
   gap: 1rem;
+  grid-template-columns: 1fr; /* Default: mobile first (<= 480px) */
+}
 
-
-
-  @media screen and (max-width: 320px) {
-    grid-template-columns: 1fr;
-  }
-
-  @media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 481px) {
+  .grid4-container {
     grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  @media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) {
+  .grid4-container {
     grid-template-columns: repeat(3, 1fr);
   }
+}
 
-  @media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
+  .grid4-container {
     grid-template-columns: repeat(4, 1fr);
   }
 }

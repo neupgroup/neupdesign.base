@@ -1,0 +1,68 @@
+@use "../../Base/index" as base;
+@use "../../Components/Chip/plain" as chip;
+
+.card-3 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid #e0e0e0;
+
+    .card__image-wrapper {
+        max-width: 100%;
+        overflow: hidden;
+
+        .card__image {
+            border-radius: 0px;
+            width: 100%;
+            height: auto;
+            transition: transform 500ms;
+        }
+    }
+
+    .card__content {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+
+
+        .card__tag {
+            @extend .chip;
+        }
+
+        .card__title {
+            @extend .title-3;
+            transition: all 500ms;
+        }
+
+        .card__description {
+            font-size: 1rem;
+            margin-top: base.$spacing-less-1;
+        }
+
+        .card__published-on {
+            margin-top: base.$spacing-less-1;
+        }
+
+        .card__read-time {
+            @extend .caption;
+        }
+    }
+
+        // Hover effect for grid wrapper
+    &:hover {
+        .card__image-wrapper {
+            .card__image {
+                transform: scale(1.05);
+                transition: all 500ms;
+            }
+        }
+
+        .card__content {
+            .card__title {
+                color: var(--color-m-dynamic-50);
+                transition: all 500ms;
+            }
+        }
+    }
+}

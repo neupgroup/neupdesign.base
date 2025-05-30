@@ -111,6 +111,7 @@ h6,
 .title-1,
 .title-2,
 .title-3,
+.card-3 .card__content .card__title,
 .title-4,
 .title-5,
 .title-6 {
@@ -129,6 +130,7 @@ h6,
   .title-1,
   .title-2,
   .title-3,
+  .card-3 .card__content .card__title,
   .title-4,
   .title-5,
   .title-6 {
@@ -145,6 +147,7 @@ h6,
   .title-1,
   .title-2,
   .title-3,
+  .card-3 .card__content .card__title,
   .title-4,
   .title-5,
   .title-6 {
@@ -173,7 +176,9 @@ h6,
     font-size: 1.1063997886rem;
   }
   body.minorSecond h3,
-  body.minorSecond .title-3 {
+  body.minorSecond .title-3,
+  body.minorSecond .card-3 .card__content .card__title,
+  .card-3 .card__content body.minorSecond .card__title {
     font-size: 1.0369257625rem;
   }
   body.minorSecond h4,
@@ -192,7 +197,7 @@ h6,
   body.minorSecond .body {
     font-size: 1rem;
   }
-  body.minorSecond .caption, body.minorSecond .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.minorSecond .grid__read-time,
+  body.minorSecond .caption, body.minorSecond .card-3 .card__content .card__read-time, .card-3 .card__content body.minorSecond .card__read-time,
   body.minorSecond .overhead {
     font-size: 0.9372071228rem;
   }
@@ -207,7 +212,9 @@ h6,
     font-size: 1.1755497754rem;
   }
   body.minorSecond h3,
-  body.minorSecond .title-3 {
+  body.minorSecond .title-3,
+  body.minorSecond .card-3 .card__content .card__title,
+  .card-3 .card__content body.minorSecond .card__title {
     font-size: 1.1017336227rem;
   }
   body.minorSecond h4,
@@ -226,7 +233,7 @@ h6,
   body.minorSecond .body {
     font-size: 1rem;
   }
-  body.minorSecond .caption, body.minorSecond .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.minorSecond .grid__read-time,
+  body.minorSecond .caption, body.minorSecond .card-3 .card__content .card__read-time, .card-3 .card__content body.minorSecond .card__read-time,
   body.minorSecond .overhead {
     font-size: 0.9372071228rem;
   }
@@ -241,7 +248,9 @@ h6,
     font-size: 1.2446997622rem;
   }
   body.minorSecond h3,
-  body.minorSecond .title-3 {
+  body.minorSecond .title-3,
+  body.minorSecond .card-3 .card__content .card__title,
+  .card-3 .card__content body.minorSecond .card__title {
     font-size: 1.1665414828rem;
   }
   body.minorSecond h4,
@@ -260,7 +269,7 @@ h6,
   body.minorSecond .body {
     font-size: 1rem;
   }
-  body.minorSecond .caption, body.minorSecond .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.minorSecond .grid__read-time,
+  body.minorSecond .caption, body.minorSecond .card-3 .card__content .card__read-time, .card-3 .card__content body.minorSecond .card__read-time,
   body.minorSecond .overhead {
     font-size: 0.9372071228rem;
   }
@@ -275,7 +284,9 @@ h6,
     font-size: 1.3138497489rem;
   }
   body.minorSecond h3,
-  body.minorSecond .title-3 {
+  body.minorSecond .title-3,
+  body.minorSecond .card-3 .card__content .card__title,
+  .card-3 .card__content body.minorSecond .card__title {
     font-size: 1.231349343rem;
   }
   body.minorSecond h4,
@@ -294,7 +305,7 @@ h6,
   body.minorSecond .body {
     font-size: 1rem;
   }
-  body.minorSecond .caption, body.minorSecond .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.minorSecond .grid__read-time,
+  body.minorSecond .caption, body.minorSecond .card-3 .card__content .card__read-time, .card-3 .card__content body.minorSecond .card__read-time,
   body.minorSecond .overhead {
     font-size: 0.9372071228rem;
   }
@@ -309,7 +320,9 @@ h6,
     font-size: 1.3829997357rem;
   }
   body.minorSecond h3,
-  body.minorSecond .title-3 {
+  body.minorSecond .title-3,
+  body.minorSecond .card-3 .card__content .card__title,
+  .card-3 .card__content body.minorSecond .card__title {
     font-size: 1.2961572031rem;
   }
   body.minorSecond h4,
@@ -328,7 +341,7 @@ h6,
   body.minorSecond .body {
     font-size: 1rem;
   }
-  body.minorSecond .caption, body.minorSecond .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.minorSecond .grid__read-time,
+  body.minorSecond .caption, body.minorSecond .card-3 .card__content .card__read-time, .card-3 .card__content body.minorSecond .card__read-time,
   body.minorSecond .overhead {
     font-size: 0.9372071228rem;
   }
@@ -344,7 +357,9 @@ h6,
     font-size: 1.4416259766rem;
   }
   body.majorSecond h3,
-  body.majorSecond .title-3 {
+  body.majorSecond .title-3,
+  body.majorSecond .card-3 .card__content .card__title,
+  .card-3 .card__content body.majorSecond .card__title {
     font-size: 1.2814453125rem;
   }
   body.majorSecond h4,
@@ -363,7 +378,7 @@ h6,
   body.majorSecond .body {
     font-size: 1rem;
   }
-  body.majorSecond .caption, body.majorSecond .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.majorSecond .grid__read-time,
+  body.majorSecond .caption, body.majorSecond .card-3 .card__content .card__read-time, .card-3 .card__content body.majorSecond .card__read-time,
   body.majorSecond .overhead {
     font-size: 0.8888888889rem;
   }
@@ -378,7 +393,9 @@ h6,
     font-size: 1.5317276001rem;
   }
   body.majorSecond h3,
-  body.majorSecond .title-3 {
+  body.majorSecond .title-3,
+  body.majorSecond .card-3 .card__content .card__title,
+  .card-3 .card__content body.majorSecond .card__title {
     font-size: 1.3615356445rem;
   }
   body.majorSecond h4,
@@ -397,7 +414,7 @@ h6,
   body.majorSecond .body {
     font-size: 1rem;
   }
-  body.majorSecond .caption, body.majorSecond .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.majorSecond .grid__read-time,
+  body.majorSecond .caption, body.majorSecond .card-3 .card__content .card__read-time, .card-3 .card__content body.majorSecond .card__read-time,
   body.majorSecond .overhead {
     font-size: 0.8888888889rem;
   }
@@ -412,7 +429,9 @@ h6,
     font-size: 1.6218292236rem;
   }
   body.majorSecond h3,
-  body.majorSecond .title-3 {
+  body.majorSecond .title-3,
+  body.majorSecond .card-3 .card__content .card__title,
+  .card-3 .card__content body.majorSecond .card__title {
     font-size: 1.4416259766rem;
   }
   body.majorSecond h4,
@@ -431,7 +450,7 @@ h6,
   body.majorSecond .body {
     font-size: 1rem;
   }
-  body.majorSecond .caption, body.majorSecond .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.majorSecond .grid__read-time,
+  body.majorSecond .caption, body.majorSecond .card-3 .card__content .card__read-time, .card-3 .card__content body.majorSecond .card__read-time,
   body.majorSecond .overhead {
     font-size: 0.8888888889rem;
   }
@@ -446,7 +465,9 @@ h6,
     font-size: 1.7119308472rem;
   }
   body.majorSecond h3,
-  body.majorSecond .title-3 {
+  body.majorSecond .title-3,
+  body.majorSecond .card-3 .card__content .card__title,
+  .card-3 .card__content body.majorSecond .card__title {
     font-size: 1.5217163086rem;
   }
   body.majorSecond h4,
@@ -465,7 +486,7 @@ h6,
   body.majorSecond .body {
     font-size: 1rem;
   }
-  body.majorSecond .caption, body.majorSecond .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.majorSecond .grid__read-time,
+  body.majorSecond .caption, body.majorSecond .card-3 .card__content .card__read-time, .card-3 .card__content body.majorSecond .card__read-time,
   body.majorSecond .overhead {
     font-size: 0.8888888889rem;
   }
@@ -480,7 +501,9 @@ h6,
     font-size: 1.8020324707rem;
   }
   body.majorSecond h3,
-  body.majorSecond .title-3 {
+  body.majorSecond .title-3,
+  body.majorSecond .card-3 .card__content .card__title,
+  .card-3 .card__content body.majorSecond .card__title {
     font-size: 1.6018066406rem;
   }
   body.majorSecond h4,
@@ -499,7 +522,7 @@ h6,
   body.majorSecond .body {
     font-size: 1rem;
   }
-  body.majorSecond .caption, body.majorSecond .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.majorSecond .grid__read-time,
+  body.majorSecond .caption, body.majorSecond .card-3 .card__content .card__read-time, .card-3 .card__content body.majorSecond .card__read-time,
   body.majorSecond .overhead {
     font-size: 0.8888888889rem;
   }
@@ -515,7 +538,9 @@ h6,
     font-size: 1.990656rem;
   }
   body.minorThird h3,
-  body.minorThird .title-3 {
+  body.minorThird .title-3,
+  body.minorThird .card-3 .card__content .card__title,
+  .card-3 .card__content body.minorThird .card__title {
     font-size: 1.65888rem;
   }
   body.minorThird h4,
@@ -534,7 +559,7 @@ h6,
   body.minorThird .body {
     font-size: 1rem;
   }
-  body.minorThird .caption, body.minorThird .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.minorThird .grid__read-time,
+  body.minorThird .caption, body.minorThird .card-3 .card__content .card__read-time, .card-3 .card__content body.minorThird .card__read-time,
   body.minorThird .overhead {
     font-size: 0.8333333333rem;
   }
@@ -549,7 +574,9 @@ h6,
     font-size: 2.115072rem;
   }
   body.minorThird h3,
-  body.minorThird .title-3 {
+  body.minorThird .title-3,
+  body.minorThird .card-3 .card__content .card__title,
+  .card-3 .card__content body.minorThird .card__title {
     font-size: 1.76256rem;
   }
   body.minorThird h4,
@@ -568,7 +595,7 @@ h6,
   body.minorThird .body {
     font-size: 1rem;
   }
-  body.minorThird .caption, body.minorThird .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.minorThird .grid__read-time,
+  body.minorThird .caption, body.minorThird .card-3 .card__content .card__read-time, .card-3 .card__content body.minorThird .card__read-time,
   body.minorThird .overhead {
     font-size: 0.8333333333rem;
   }
@@ -583,7 +610,9 @@ h6,
     font-size: 2.239488rem;
   }
   body.minorThird h3,
-  body.minorThird .title-3 {
+  body.minorThird .title-3,
+  body.minorThird .card-3 .card__content .card__title,
+  .card-3 .card__content body.minorThird .card__title {
     font-size: 1.86624rem;
   }
   body.minorThird h4,
@@ -602,7 +631,7 @@ h6,
   body.minorThird .body {
     font-size: 1rem;
   }
-  body.minorThird .caption, body.minorThird .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.minorThird .grid__read-time,
+  body.minorThird .caption, body.minorThird .card-3 .card__content .card__read-time, .card-3 .card__content body.minorThird .card__read-time,
   body.minorThird .overhead {
     font-size: 0.8333333333rem;
   }
@@ -617,7 +646,9 @@ h6,
     font-size: 2.363904rem;
   }
   body.minorThird h3,
-  body.minorThird .title-3 {
+  body.minorThird .title-3,
+  body.minorThird .card-3 .card__content .card__title,
+  .card-3 .card__content body.minorThird .card__title {
     font-size: 1.96992rem;
   }
   body.minorThird h4,
@@ -636,7 +667,7 @@ h6,
   body.minorThird .body {
     font-size: 1rem;
   }
-  body.minorThird .caption, body.minorThird .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.minorThird .grid__read-time,
+  body.minorThird .caption, body.minorThird .card-3 .card__content .card__read-time, .card-3 .card__content body.minorThird .card__read-time,
   body.minorThird .overhead {
     font-size: 0.8333333333rem;
   }
@@ -651,7 +682,9 @@ h6,
     font-size: 2.48832rem;
   }
   body.minorThird h3,
-  body.minorThird .title-3 {
+  body.minorThird .title-3,
+  body.minorThird .card-3 .card__content .card__title,
+  .card-3 .card__content body.minorThird .card__title {
     font-size: 2.0736rem;
   }
   body.minorThird h4,
@@ -670,7 +703,7 @@ h6,
   body.minorThird .body {
     font-size: 1rem;
   }
-  body.minorThird .caption, body.minorThird .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.minorThird .grid__read-time,
+  body.minorThird .caption, body.minorThird .card-3 .card__content .card__read-time, .card-3 .card__content body.minorThird .card__read-time,
   body.minorThird .overhead {
     font-size: 0.8333333333rem;
   }
@@ -686,7 +719,9 @@ h6,
     font-size: 2.44140625rem;
   }
   body.majorThird h3,
-  body.majorThird .title-3 {
+  body.majorThird .title-3,
+  body.majorThird .card-3 .card__content .card__title,
+  .card-3 .card__content body.majorThird .card__title {
     font-size: 1.953125rem;
   }
   body.majorThird h4,
@@ -705,7 +740,7 @@ h6,
   body.majorThird .body {
     font-size: 1rem;
   }
-  body.majorThird .caption, body.majorThird .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.majorThird .grid__read-time,
+  body.majorThird .caption, body.majorThird .card-3 .card__content .card__read-time, .card-3 .card__content body.majorThird .card__read-time,
   body.majorThird .overhead {
     font-size: 0.8rem;
   }
@@ -720,7 +755,9 @@ h6,
     font-size: 2.5939941406rem;
   }
   body.majorThird h3,
-  body.majorThird .title-3 {
+  body.majorThird .title-3,
+  body.majorThird .card-3 .card__content .card__title,
+  .card-3 .card__content body.majorThird .card__title {
     font-size: 2.0751953125rem;
   }
   body.majorThird h4,
@@ -739,7 +776,7 @@ h6,
   body.majorThird .body {
     font-size: 1rem;
   }
-  body.majorThird .caption, body.majorThird .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.majorThird .grid__read-time,
+  body.majorThird .caption, body.majorThird .card-3 .card__content .card__read-time, .card-3 .card__content body.majorThird .card__read-time,
   body.majorThird .overhead {
     font-size: 0.8rem;
   }
@@ -754,7 +791,9 @@ h6,
     font-size: 2.7465820313rem;
   }
   body.majorThird h3,
-  body.majorThird .title-3 {
+  body.majorThird .title-3,
+  body.majorThird .card-3 .card__content .card__title,
+  .card-3 .card__content body.majorThird .card__title {
     font-size: 2.197265625rem;
   }
   body.majorThird h4,
@@ -773,7 +812,7 @@ h6,
   body.majorThird .body {
     font-size: 1rem;
   }
-  body.majorThird .caption, body.majorThird .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.majorThird .grid__read-time,
+  body.majorThird .caption, body.majorThird .card-3 .card__content .card__read-time, .card-3 .card__content body.majorThird .card__read-time,
   body.majorThird .overhead {
     font-size: 0.8rem;
   }
@@ -788,7 +827,9 @@ h6,
     font-size: 2.8991699219rem;
   }
   body.majorThird h3,
-  body.majorThird .title-3 {
+  body.majorThird .title-3,
+  body.majorThird .card-3 .card__content .card__title,
+  .card-3 .card__content body.majorThird .card__title {
     font-size: 2.3193359375rem;
   }
   body.majorThird h4,
@@ -807,7 +848,7 @@ h6,
   body.majorThird .body {
     font-size: 1rem;
   }
-  body.majorThird .caption, body.majorThird .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.majorThird .grid__read-time,
+  body.majorThird .caption, body.majorThird .card-3 .card__content .card__read-time, .card-3 .card__content body.majorThird .card__read-time,
   body.majorThird .overhead {
     font-size: 0.8rem;
   }
@@ -822,7 +863,9 @@ h6,
     font-size: 3.0517578125rem;
   }
   body.majorThird h3,
-  body.majorThird .title-3 {
+  body.majorThird .title-3,
+  body.majorThird .card-3 .card__content .card__title,
+  .card-3 .card__content body.majorThird .card__title {
     font-size: 2.44140625rem;
   }
   body.majorThird h4,
@@ -841,7 +884,7 @@ h6,
   body.majorThird .body {
     font-size: 1rem;
   }
-  body.majorThird .caption, body.majorThird .grid2-container .grid-wrapper .grid__content .grid__read-time, .grid2-container .grid-wrapper .grid__content body.majorThird .grid__read-time,
+  body.majorThird .caption, body.majorThird .card-3 .card__content .card__read-time, .card-3 .card__content body.majorThird .card__read-time,
   body.majorThird .overhead {
     font-size: 0.8rem;
   }
@@ -1219,7 +1262,7 @@ body > section:first-of-type {
     background-color: var(--color-m-dynamic-30);
   }
 }
-.chip, .grid2-container .grid-wrapper .grid__content .grid__tag {
+.chip, .card-3 .card__content .card__tag {
   height: 32px;
   max-height: 32px;
   min-width: 48px;
@@ -1238,17 +1281,17 @@ body > section:first-of-type {
   background-color: var(--color-n-transparent);
   transition: all 400ms ease;
 }
-.chip:hover, .grid2-container .grid-wrapper .grid__content .grid__tag:hover {
+.chip:hover, .card-3 .card__content .card__tag:hover {
   color: var(--color-m-dynamic-30);
   border-color: var(--color-m-dynamic-30);
   background-color: var(--color-m-dynamic-95);
 }
-.chip:active, .grid2-container .grid-wrapper .grid__content .grid__tag:active, .chip--active {
+.chip:active, .card-3 .card__content .card__tag:active, .chip--active {
   color: var(--color-m-dynamic-20);
   border-color: var(--color-m-dynamic-20);
   background-color: var(--color-m-dynamic-90);
 }
-.chip:disabled, .grid2-container .grid-wrapper .grid__content .grid__tag:disabled, .chip--disabled, .chip[aria-disabled=true], .grid2-container .grid-wrapper .grid__content [aria-disabled=true].grid__tag {
+.chip:disabled, .card-3 .card__content .card__tag:disabled, .chip--disabled, .chip[aria-disabled=true], .card-3 .card__content [aria-disabled=true].card__tag {
   color: var(--color-m-dynamic-40);
   border-color: var(--color-m-dynamic-40);
   background-color: var(--color-n-transparent);
@@ -1283,57 +1326,19 @@ body > section:first-of-type {
 /* Grid Container */
 .grid1-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Default for all screen sizes */
+  /* Optional: Add responsiveness for extreme edge cases if needed */
+}
+@media screen and (max-width: 480px) {
+  .grid1-container {
+    grid-template-columns: 1fr; /* Single column for small screens */
+  }
 }
 
 .grid2-container {
   display: grid;
   gap: 16px;
-}
-.grid2-container .grid-wrapper {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  border-radius: 16px;
-  border: 1px solid #e0e0e0;
-}
-.grid2-container .grid-wrapper:hover .grid__media > img {
-  transform: scale(1.05);
-  transition: transform 500ms;
-}
-.grid2-container .grid-wrapper:hover .grid__content > .grid__title {
-  color: var(--color-m-dynamic-20);
-  transition: color 500ms;
-}
-.grid2-container .grid-wrapper .grid__media {
-  max-width: 100%;
-  overflow: hidden;
-}
-.grid2-container .grid-wrapper .grid__media img {
-  border-radius: 0px;
-  width: 100%;
-  height: auto;
-  transition: transform 500ms;
-}
-.grid2-container .grid-wrapper .grid__content {
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-}
-.grid2-container .grid-wrapper .grid__content .grid__title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-  margin-top: 8px;
-}
-.grid2-container .grid-wrapper .grid__content .grid__description {
-  font-size: 1rem;
-  margin-top: 8px;
-}
-.grid2-container .grid-wrapper .grid__content .grid__published-on {
-  margin-top: 8px;
 }
 @media screen and (max-width: 640px) {
   .grid2-container .grid2-container {
@@ -1404,31 +1409,28 @@ body > section:first-of-type {
   }
 }
 
+/* Client section design */
 .grid4-container {
   display: grid;
   gap: 1rem;
+  grid-template-columns: 1fr; /* Default: mobile first (<= 480px) */
 }
-@media screen and (max-width: 320px) {
-  .grid4-container {
-    grid-template-columns: 1fr;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 768px) {
+
+@media screen and (min-width: 481px) {
   .grid4-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) {
   .grid4-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
   .grid4-container {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
 .grid5-container {
   display: grid;
 }
@@ -1982,6 +1984,47 @@ HTML Structure for Card 2 ends.
     background-color: var(--color-m-dynamic-30);
     box-shadow: 0 4px 8px var(--color-m-dynamic-10);
   }
+}
+
+.card-3 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+}
+.card-3 .card__image-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+.card-3 .card__image-wrapper .card__image {
+  border-radius: 0px;
+  width: 100%;
+  height: auto;
+  transition: transform 500ms;
+}
+.card-3 .card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+.card-3 .card__content .card__title {
+  transition: all 500ms;
+}
+.card-3 .card__content .card__description {
+  font-size: 1rem;
+  margin-top: 8px;
+}
+.card-3 .card__content .card__published-on {
+  margin-top: 8px;
+}
+.card-3:hover .card__image-wrapper .card__image {
+  transform: scale(1.05);
+  transition: all 500ms;
+}
+.card-3:hover .card__content .card__title {
+  color: var(--color-m-dynamic-50);
+  transition: all 500ms;
 }
 
 header.header.header--1 {
