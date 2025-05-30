@@ -1986,6 +1986,28 @@ HTML Structure for Card 2 ends.
   }
 }
 
+/* 
+================================================>
+    Card 3 Component Styles Starts.
+================================================>
+
+<div class="card-3">
+    <div class="card__image-wrapper">
+        <img src="https://cdn.dribbble.com/userupload/10650907/file/original-57b15a1aee9babc8562f317340008e7f.png?format=webp&resize=400x300&vertical=center" alt="" class="card__image">
+    </div>
+    <div class="card__content">
+        <a href="#" class="card__tag">Category name</a>
+        <a href="#" class="card__title">Title goes in here.</a>
+        <div class="card__description">A short description goes in here.</div>
+        <div class="card__published-on">Published Date</div>
+        <div class="card__read-time">x Minutes Read</div>
+    </div>
+</div>
+
+===================================================>
+Card 3 Component Styles Ends.
+===================================================>
+*/
 .card-3 {
   display: flex;
   flex-direction: column;
