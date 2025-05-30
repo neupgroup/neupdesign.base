@@ -1365,29 +1365,6 @@ body > section:first-of-type {
   display: grid;
   grid-gap: 2rem 1rem;
 }
-.grid3-container .grid-wrapper .grid__media-wrapper {
-  border-radius: 16px;
-  overflow: hidden;
-}
-.grid3-container .grid-wrapper .grid__media-wrapper .grid__image {
-  width: 100%;
-  height: auto;
-  transition: transform 500ms;
-}
-.grid3-container .grid-wrapper .grid__title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-top: 1rem;
-}
-.grid3-container .grid-wrapper .grid__subtitle {
-  font-size: 1rem;
-  font-weight: 500;
-  margin-top: 0.25rem;
-}
-.grid3-container .grid-wrapper:hover .grid__media-wrapper .grid__image {
-  transform: scale(1.05);
-  transition: transform 500ms;
-}
 @media screen and (max-width: 640px) {
   .grid3-container {
     grid-template-columns: repeat(1, 1fr);
@@ -2047,6 +2024,52 @@ Card 3 Component Styles Ends.
 .card-3:hover .card__content .card__title {
   color: var(--color-m-dynamic-50);
   transition: all 500ms;
+}
+
+/*
+===================================================>
+HTML Structure of Card 4 Start.
+===================================================>
+
+<div class="card-4">
+    <div class="card__image-wrapper">
+        <img src="https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg" class="card__image" alt="Photo of {MemberName}">
+    </div>
+    <p class="card__title">Member Name</p>
+    <p class="card__subtitle">Members Position</p>
+</div>
+
+===================================================>
+HTML Structure of Card 4 End.
+===================================================>
+*/
+/*
+===================================================>
+Card 4 Styles Imports.
+===================================================>
+*/
+.card-4 .card__image-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.card-4 .card__image-wrapper .card__image {
+  width: 100%;
+  height: auto;
+  transition: transform 500ms;
+}
+.card-4 .card__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.card-4 .card__subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+.card-4:hover .card__image-wrapper .card__image {
+  transform: scale(1.05);
+  transition: transform 500ms;
 }
 
 header.header.header--1 {
