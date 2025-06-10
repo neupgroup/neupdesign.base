@@ -1799,6 +1799,11 @@ button:disabled, button[aria-disabled=true], input[type=submit]:disabled, input[
   /* Card Description */
   /* Card Date */
 }
+.card-1 .card__content-wrapper .card__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
 .card-1 .card__content-wrapper .card__title {
   margin: 0;
   font-size: 1.3em;
