@@ -1788,30 +1788,6 @@ button:disabled, button[aria-disabled=true], input[type=submit]:disabled, input[
   font-size: 0.9rem;
 }
 
-/*
-=============================>
-HTML Structure for Card 1 starts.
-=============================>
-
-<div class="card-1">
-  <div class="card__image-wrapper">
-    <img src="https://themewagon.github.io/travelista/img/b2.jpg" alt="It's Classified How To Utilize Free"
-      class="card__image">
-  </div>
-  <div class="card__chips">
-    <a href="#" class="chip">Travel</a>
-    <a href="#" class="chip">Life Style</a>
-  </div>
-  <h3 class="card__title">Creative Outdoor Ads</h3>
-  <p class="card__description">Acres of Diamonds... you've read the famous story, or at least had it related to
-    you. A farmer</p>
-  <span class="card__meta">31st January,2018</span>
-</div>
-
-=============================>
-HTML Structure for Card 1 ends.
-=============================>
-*/
 /* Card Item */
 .card-1 {
   background-color: var(--color-m-dynamic-15);
@@ -1820,12 +1796,9 @@ HTML Structure for Card 1 ends.
   /* Crucial for clipping the zoomed image */
   display: flex;
   flex-direction: column;
+  gap: 4px;
   cursor: pointer;
   /* Indicates it's interactive */
-  /* Chips Container */
-  /* Card Title */
-  /* Card Description */
-  /* Card Date */
   /* Card Image */
   /* Hover effect on the image when the card item is hovered */
 }
@@ -1839,58 +1812,6 @@ HTML Structure for Card 1 ends.
   .card-1 {
     box-shadow: 0 4px 8px var(--color-m-dynamic-95);
     background-color: var(--color-m-dynamic-85);
-  }
-}
-.card-1 .card__chips {
-  padding: 15px;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.card-1 .card__title {
-  font-size: 1.3em;
-  margin: 0;
-  padding: 0 15px 10px;
-}
-@media screen and (prefers-color-scheme: light) {
-  .card-1 .card__title {
-    color: var(--color-m-dynamic-10);
-  }
-}
-@media screen and (prefers-color-scheme: dark) {
-  .card-1 .card__title {
-    color: var(--color-m-dynamic-90);
-  }
-}
-.card-1 .card__description {
-  font-size: 0.95em;
-  line-height: 1.5;
-  padding: 0 15px 10px;
-  flex-grow: 1;
-  /* Allows description to take up available space */
-}
-@media screen and (prefers-color-scheme: light) {
-  .card-1 .card__description {
-    color: var(--color-m-dynamic-20);
-  }
-}
-@media screen and (prefers-color-scheme: dark) {
-  .card-1 .card__description {
-    color: var(--color-m-dynamic-80);
-  }
-}
-.card-1 .card__meta {
-  font-size: 0.8em;
-  padding: 0 15px 15px;
-}
-@media screen and (prefers-color-scheme: light) {
-  .card-1 .card__meta {
-    color: var(--color-m-dynamic-20);
-  }
-}
-@media screen and (prefers-color-scheme: dark) {
-  .card-1 .card__meta {
-    color: var(--color-m-dynamic-80);
   }
 }
 .card-1 .card__image-wrapper {
@@ -1912,24 +1833,62 @@ HTML Structure for Card 1 ends.
   /* Added for smooth zoom transition */
   transition: transform 0.3s ease-in-out;
 }
+.card-1 .card__content-wrapper {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  /* Card Title */
+  /* Card Description */
+  /* Card Date */
+}
+.card-1 .card__content-wrapper .card__title {
+  margin: 0;
+  font-size: 1.3em;
+}
+@media screen and (prefers-color-scheme: light) {
+  .card-1 .card__content-wrapper .card__title {
+    color: var(--color-m-dynamic-10);
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .card-1 .card__content-wrapper .card__title {
+    color: var(--color-m-dynamic-90);
+  }
+}
+.card-1 .card__content-wrapper .card__description {
+  font-size: 0.95em;
+  line-height: 1.5;
+  /* Allows description to take up available space */
+}
+@media screen and (prefers-color-scheme: light) {
+  .card-1 .card__content-wrapper .card__description {
+    color: var(--color-m-dynamic-20);
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .card-1 .card__content-wrapper .card__description {
+    color: var(--color-m-dynamic-80);
+  }
+}
+.card-1 .card__content-wrapper .card__meta {
+  font-size: 0.8em;
+}
+@media screen and (prefers-color-scheme: light) {
+  .card-1 .card__content-wrapper .card__meta {
+    color: var(--color-m-dynamic-20);
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .card-1 .card__content-wrapper .card__meta {
+    color: var(--color-m-dynamic-80);
+  }
+}
 .card-1:hover .card__image {
   /* Zooms the image content by 10% */
   transform: scale(1.1);
 }
 
-/*
-===============================>
-HTML Structure for Card 2 starts.
-===============================>
-
-<div class="card-2">
-    <img src="https://logowik.com/content/uploads/images/pathao3898.logowik.com.webp" class="card__image" alt="Client 01">
-</div>
-
-===============================>
-HTML Structure for Card 2 ends.
-===============================>
-*/
 .card-2 {
   display: flex;
   flex-direction: column;
@@ -1963,28 +1922,6 @@ HTML Structure for Card 2 ends.
   }
 }
 
-/* 
-================================================>
-    Card 3 Component Styles Starts.
-================================================>
-
-<div class="card-3">
-    <div class="card__image-wrapper">
-        <img src="https://cdn.dribbble.com/userupload/10650907/file/original-57b15a1aee9babc8562f317340008e7f.png?format=webp&resize=400x300&vertical=center" alt="" class="card__image">
-    </div>
-    <div class="card__content">
-        <a href="#" class="card__tag">Category name</a>
-        <a href="#" class="card__title">Title goes in here.</a>
-        <div class="card__description">A short description goes in here.</div>
-        <div class="card__published-on">Published Date</div>
-        <div class="card__read-time">x Minutes Read</div>
-    </div>
-</div>
-
-===================================================>
-Card 3 Component Styles Ends.
-===================================================>
-*/
 .card-3 {
   display: flex;
   flex-direction: column;
@@ -1997,9 +1934,9 @@ Card 3 Component Styles Ends.
   overflow: hidden;
 }
 .card-3 .card__image-wrapper .card__image {
-  border-radius: 0px;
   width: 100%;
   height: auto;
+  border-radius: 0px;
   transition: transform 500ms;
 }
 .card-3 .card__content {
@@ -2026,28 +1963,6 @@ Card 3 Component Styles Ends.
   transition: all 500ms;
 }
 
-/*
-===================================================>
-HTML Structure of Card 4 Start.
-===================================================>
-
-<div class="card-4">
-    <div class="card__image-wrapper">
-        <img src="https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg" class="card__image" alt="Photo of {MemberName}">
-    </div>
-    <p class="card__title">Member Name</p>
-    <p class="card__subtitle">Members Position</p>
-</div>
-
-===================================================>
-HTML Structure of Card 4 End.
-===================================================>
-*/
-/*
-===================================================>
-Card 4 Styles Imports.
-===================================================>
-*/
 .card-4 .card__image-wrapper {
   border-radius: 16px;
   overflow: hidden;
