@@ -1,0 +1,53 @@
+.card-5 {
+    background-color: var(--color-m-dynamic-15);
+    border-radius: 8px;
+    overflow: hidden;
+    /* Crucial for clipping the zoomed image */
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 24px;
+
+    /* Indicates it's interactive */
+    @media screen and (prefers-color-scheme: light) {
+        box-shadow: 0 4px 8px var(--color-m-dynamic-5);
+        background-color: var(--color-m-dynamic-15);
+    }
+
+    @media screen and (prefers-color-scheme: light) {
+        box-shadow: 0 4px 8px var(--color-m-dynamic-95);
+        background-color: var(--color-m-dynamic-85);
+    }
+
+    .card__image-wrapper {
+        max-width: 100px;
+    }
+
+    .card__title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--color-m-dynamic-100);
+        margin-top: 18px;
+    }
+
+    .card__description {
+        font-size: 1rem;
+        color: var(--color-m-dynamic-80);
+        line-height: 1.5;
+        margin-top: 12px;
+    }
+
+    .card__actions {
+        border-radius: 4px;
+        color: var(--color-m-dynamic-100);
+        text-decoration: none;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+        margin-top: 18px;
+
+        &:hover {
+            color: var(--color-m-dynamic-70);
+        }
+    }
+
+}
