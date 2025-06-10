@@ -1,91 +1,47 @@
-/* 
-================================================>
-    Card 3 Component Styles Starts.
-================================================>
-
-<div class="card-3">
-    <div class="card__image-wrapper">
-        <img src="https://cdn.dribbble.com/userupload/10650907/file/original-57b15a1aee9babc8562f317340008e7f.png?format=webp&resize=400x300&vertical=center" alt="" class="card__image">
-    </div>
-    <div class="card__content">
-        <a href="#" class="card__tag">Category name</a>
-        <a href="#" class="card__title">Title goes in here.</a>
-        <div class="card__description">A short description goes in here.</div>
-        <div class="card__published-on">Published Date</div>
-        <div class="card__read-time">x Minutes Read</div>
-    </div>
-</div>
-
-===================================================>
-Card 3 Component Styles Ends.
-===================================================>
-*/
-
+// Dependencies:
 @use "../../Base/index" as base;
-@use "../../Components/Chip/plain" as chip;
 
+
+// Card 3 Styles
 .card-3 {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     border-radius: 16px;
-    border: 1px solid #e0e0e0;
+    background-color: var(--color-m-dynamic-10);
+    padding: 24px;
 
     .card__image-wrapper {
-        max-width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
         overflow: hidden;
+        border-radius: 16px;
 
         .card__image {
-            border-radius: 0px;
-            width: 100%;
             height: auto;
-            transition: transform 500ms;
+            width: auto;
+            max-width: 100%;
+            max-height: 50px;
+            object-fit: contain;
+            border-radius: 0;
         }
     }
 
-    .card__content {
-        display: flex;
-        flex-direction: column;
-        padding: 16px;
-
-
-        .card__tag {
-            @extend .chip;
-        }
-
-        .card__title {
-            @extend .title-3;
-            transition: all 500ms;
-        }
-
-        .card__description {
-            font-size: 1rem;
-            margin-top: base.$spacing-less-1;
-        }
-
-        .card__published-on {
-            margin-top: base.$spacing-less-1;
-        }
-
-        .card__read-time {
-            @extend .caption;
-        }
+    .card__description {
+        font-size: 1rem;
+        margin-top: 24px;
     }
 
-    // Hover effect for grid wrapper
-    &:hover {
-        .card__image-wrapper {
-            .card__image {
-                transform: scale(1.05);
-                transition: all 500ms;
-            }
-        }
+    .card__published-by {
+        @extend .caption;
+        font-weight: 600;
+        margin-top: 16px;
+    }
 
-        .card__content {
-            .card__title {
-                color: var(--color-m-dynamic-50);
-                transition: all 500ms;
-            }
-        }
+    .card__published-on {
+        @extend .caption;
+        color: var(--color-m-dynamic-70);
     }
 }
