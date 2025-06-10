@@ -1852,7 +1852,7 @@ button:disabled, button[aria-disabled=true], input[type=submit]:disabled, input[
 }
 .card-3 .card__image-wrapper {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   overflow: hidden;
@@ -1994,6 +1994,44 @@ button:disabled, button[aria-disabled=true], input[type=submit]:disabled, input[
   transform: scale(1.03);
   filter: brightness(40%);
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.card-7 {
+  padding: 24px;
+  border-radius: 16px;
+  transition: 300ms ease-in-out;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .card-7 {
+    background-color: var(--color-m-dynamic-20);
+    box-shadow: 0 4px 8px var(--color-m-dynamic-5);
+  }
+}
+@media screen and (prefers-color-scheme: light) {
+  .card-7 {
+    background-color: var(--color-m-dynamic-90);
+    box-shadow: 0 4px 8px var(--color-m-dynamic-70);
+  }
+}
+.card-7 .card__title {
+  margin-top: 18px;
+}
+.card-7 .card__description {
+  margin-top: 12px;
+}
+.card-7:hover {
+  background-color: var(--color-m-dynamic-15);
+  transition: 300ms ease-in-out;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .card-7:hover {
+    background-color: var(--color-m-dynamic-15);
+  }
+}
+@media screen and (prefers-color-scheme: light) {
+  .card-7:hover {
+    background-color: var(--color-m-dynamic-95);
+  }
 }
 
 header.header.header--1 {

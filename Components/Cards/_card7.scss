@@ -1,0 +1,37 @@
+.card-7 {
+    padding: 24px;
+    border-radius: 16px;
+    transition: 300ms ease-in-out;
+
+    @media screen and (prefers-color-scheme: dark) {
+        background-color: var(--color-m-dynamic-20);
+        box-shadow: 0 4px 8px var(--color-m-dynamic-5);
+    }
+
+    @media screen and (prefers-color-scheme: light) {
+        background-color: var(--color-m-dynamic-90);
+        box-shadow: 0 4px 8px var(--color-m-dynamic-70);
+    }
+
+    .card__title {
+        margin-top: 18px;
+    }
+
+    .card__description {
+        margin-top: 12px;
+    }
+
+    &:hover {
+
+        @media screen and (prefers-color-scheme: dark) {
+            background-color: var(--color-m-dynamic-15);
+        }
+
+        @media screen and (prefers-color-scheme: light) {
+            background-color: var(--color-m-dynamic-95);
+        }
+
+        background-color: var(--color-m-dynamic-15);
+        transition: 300ms ease-in-out;
+    }
+}
