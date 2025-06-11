@@ -1,9 +1,9 @@
 // Dependencies:
-@use "../../Base/index" as base;
+@use "../../../Base/index" as base;
 
 
 // Card 3 Styles
-.card-3 {
+.card.card-review-1 {
     display: flex;
     flex-direction: column;
     overflow: hidden;

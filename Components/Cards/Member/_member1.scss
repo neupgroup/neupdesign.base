@@ -1,0 +1,46 @@
+// Card 4 Styles
+.card.card-member-1 {
+    .card__image-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        max-height: 600px;
+        border-radius: 16px;
+        overflow: hidden;
+
+        @media screen and (prefers-color-scheme: dark) {
+            background-color: var(--color-m-dynamic-15);
+        }
+
+        @media screen and (prefers-color-scheme: light) {
+            background-color: var(--color-m-dynamic-85);
+        }
+
+        .card__image {
+            height: min-content;
+            object-fit: cover;
+            transition: transform 300ms ease-in-out;
+        }
+    }
+
+    .card__title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+
+    .card__subtitle {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 0.25rem;
+    }
+
+    &:hover {
+        .card__image-wrapper {
+            .card__image {
+                transform: scale(1.05);
+                transition: transform 300ms ease-in-out;
+            }
+        }
+    }
+}
