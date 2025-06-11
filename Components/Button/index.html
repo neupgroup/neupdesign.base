@@ -5,28 +5,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../index.css">
-    <title>Button</title>
-    <style>
-        @media (prefers-color-scheme: light) {
-            body {background-color: white;}
-        }
-        @media (prefers-color-scheme: dark) {
-            body {background-color: black;}
-        }
-    </style>
+    <title>Document</title>
 </head>
+<!--Major third generally used for landing pages-->
 
-<body class="minorThird">
-    <div class="section">
+<body class="majorThird">
+
+    <!--Always use section section-name for all the sections-->
+    <section class="section section-test">
         <div class="container">
 
-            <a href="" class="button button--solid">Solid Button</a>
-            <a href="" class="button button--tint">Tint Button</a>
-            <a href="" class="button button--outline">Outline Button</a>
-            <a href="" class="button button--plain">Plain Button</a>
+            <!--Always use section__title, and section__description when testing something-->
+            <h2 class="section__title">Button Testing</h2>
+            <p class="section__description">Checking how buttons will look in different conditions.</p>
+
+            <!--The main testing content will reside inside the section__content. Add with relevant classes behind section__content-->
+            <div class="section__content other-relevant-classes">
+                <!--Main testing starts here-->
+
+                <p>This is a solid button.</p>
+                <a href="#" class="button button--solid">
+                    <div class="button__text">Solid Button</div>
+                </a>
+                <br><br>
+
+                <p>This is a solid button with an icon.</p>
+                <a href="#" class="button button--solid">
+                    <div class="button__icon">
+                        <img src="https://www.svgrepo.com/show/525377/home-add-angle.svg" alt="Home Icon">
+                    </div>
+                    <div class="button__text">Solid Button with Icon</div>
+                </a>
+                <br><br>
+
+                <p>This is a disabled solid button.</p>
+                <a href="#" class="button button--solid button--disabled">
+                    <div class="button__text">Solid Button</div>
+                </a>
+                <br><br>
+
+                <p>This is a disabled solid button with icon.</p>
+                <a href="#" class="button button--solid button--disabled">
+                    <div class="button__icon">
+                        <img src="https://www.svgrepo.com/show/525377/home-add-angle.svg" alt="Home Icon">
+                    </div>
+                    <div class="button__text">Solid Button with Icon</div>
+                </a>
+                <br><br>
+
+                <p>This is a tint button.</p>
+                <a href="#" class="button button--tint">
+                    <div class="button__text">Tint Button</div>
+                </a>
+                <br><br>
+
+                <p>This is a tint button with an icon.</p>
+                <a href="#" class="button button--tint">
+                    <div class="button__icon">
+                        <img src="https://www.svgrepo.com/show/525377/home-add-angle.svg" alt="Home Icon">
+                    </div>
+                    <div class="button__text">Tint Button with Icon</div>
+                </a>
+                <br><br>
+
+                <p>This is a disabled tint button.</p>
+                <a href="#" class="button button--tint button--disabled">
+                    <div class="button__text">Solid Button</div>
+                </a>
+                <br><br>
+
+                <p>This is a disabled tint button with icon.</p>
+                <a href="#" class="button button--tint button--disabled">
+                    <div class="button__icon">
+                        <img src="https://www.svgrepo.com/show/525377/home-add-angle.svg" alt="Home Icon">
+                    </div>
+                    <div class="button__text">Solid Button with Icon</div>
+                </a>
+                <br><br>
+
+                <p>This is a outline button.</p>
+                <a href="#" class="button button--outline">
+                    <div class="button__text">Outline Button</div>
+                </a>
+                <br><br>
+
+                <p>This is a outline button with an icon.</p>
+                <a href="#" class="button button--outline">
+                    <div class="button__icon">
+                        <img src="https://www.svgrepo.com/show/525377/home-add-angle.svg" alt="Home Icon">
+                    </div>
+                    <div class="button__text">Outline Button with Icon</div>
+                </a>
+                <br><br>
+
+                <p>This is a disabled outline button.</p>
+                <a href="#" class="button button--outline button--disabled">
+                    <div class="button__text">Outline Button</div>
+                </a>
+                <br><br>
+
+                <p>This is a disabled outline button with icon.</p>
+                <a href="#" class="button button--outline button--disabled">
+                    <div class="button__icon">
+                        <img src="https://www.svgrepo.com/show/525377/home-add-angle.svg" alt="Home Icon">
+                    </div>
+                    <div class="button__text">Outline Button with Icon</div>
+                </a>
+                <br><br>
+
+                <p>This is a plain button.</p>
+                <a href="#" class="button button--plain">
+                    <div class="button__text">Outline Button</div>
+                </a>
+                <br><br>
+
+                <p>This is a plain button with an icon.</p>
+                <a href="#" class="button button--plain">
+                    <div class="button__icon">
+                        <img src="https://www.svgrepo.com/show/525377/home-add-angle.svg" alt="Home Icon">
+                    </div>
+                    <div class="button__text">Plain Button with Icon</div>
+                </a>
+                <br><br>
+
+                <p>This is a disabled plain button.</p>
+                <a href="#" class="button button--plain button--disabled">
+                    <div class="button__text">Plain Button</div>
+                </a>
+                <br><br>
+
+                <p>This is a disabled plain button with icon.</p>
+                <a href="#" class="button button--plain button--disabled">
+                    <div class="button__icon">
+                        <img src="https://www.svgrepo.com/show/525377/home-add-angle.svg" alt="Home Icon">
+                    </div>
+                    <div class="button__text">Plain Button with Icon</div>
+                </a>
+                <br><br>
+
+                <!--Main testing ends here-->
+                <section class="section section--info">
+                    <div class="container">
+                        <h2 class="section__title">Informative Notice</h2>
+                        <div class="section__description">In a single area, don't have more than one solid button. It's
+                            advised that if you need more than 1 buttons clustered, use outlined buttons.</div>
+                    </div>
+                </section>
+            </div>
 
         </div>
-    </div>
+    </section>
+
 </body>
 
 </html>
