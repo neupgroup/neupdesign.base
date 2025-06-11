@@ -982,26 +982,98 @@ body > section:first-of-type {
   }
 }
 
-.button--profile {
-  background-color: var(--color-m-dynamic-100);
-  color: #000;
+.badgable {
+  display: inline-block;
+  position: relative;
 }
 
-.badge--profile {
-  background-color: var(--color-m-dynamic-100);
-  color: #000;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
+.badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  z-index: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 8px;
+  min-height: 16px;
+  min-width: 16px;
+  max-height: 24px;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  border-radius: 20px;
 }
-
-.badge--profile img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
+@media screen and (prefers-color-scheme: dark) {
+  .badge {
+    background-color: var(--color-m-dynamic-100);
+    color: #000000;
+  }
+}
+@media screen and (prefers-color-scheme: light) {
+  .badge {
+    background-color: var(--color-m-dynamic-0);
+    color: #ffffff;
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .badge--info {
+    background-color: #3b82f6;
+    color: var(--color-m-dynamic-10);
+  }
+}
+@media screen and (prefers-color-scheme: light) {
+  .badge--info {
+    background-color: #dbeafe;
+    color: var(--color-m-dynamic-90);
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .badge--success {
+    background-color: #d1fae5;
+    color: var(--color-m-dynamic-10);
+  }
+}
+@media screen and (prefers-color-scheme: light) {
+  .badge--success {
+    background-color: #22c55e;
+    color: var(--color-m-dynamic-10);
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .badge--warning {
+    background-color: #f59e0b;
+    color: var(--color-m-dynamic-10);
+  }
+}
+@media screen and (prefers-color-scheme: light) {
+  .badge--warning {
+    background-color: #f3f3c7;
+    color: var(--color-m-dynamic-10);
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .badge--danger {
+    background-color: #ef4444;
+    color: var(--color-m-dynamic-10);
+  }
+}
+@media screen and (prefers-color-scheme: light) {
+  .badge--danger {
+    background-color: #fee2e2;
+    color: var(--color-m-dynamic-10);
+  }
+}
+.badge--with-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  right: -8px;
+  min-width: 24px;
+  min-height: 24px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .button, .button--plain, footer.footer--1 .footer__nav-row.footer__nav-row--links .footer__nav-column .footer__nav-title, footer.footer--1 .footer__nav-item, .button--outline, .button--tint, .button--solid {

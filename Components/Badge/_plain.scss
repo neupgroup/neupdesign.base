@@ -2,25 +2,110 @@
 @use "../../Base/index" as base;
 
 
-// Main Code for the Badge.
-.button--profile {
-  background-color: var(--color-m-dynamic-100);
-  color: #000;
+// For the element wrapping the badge.
+.badgable {
+  display: inline-block;
+  position: relative;
 }
 
-.badge--profile {
-  background-color: var(--color-m-dynamic-100);
-  color: #000;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
+
+// Main Code for the Badge.
+.badge {
+  // Only to position it correctly.
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  z-index: 1;
+  // The contents should be centered.
   display: inline-flex;
   align-items: center;
   justify-content: center;
-}
+  // The badge should be small and not too big.
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 8px;
+  min-height: 16px;
+  min-width: 16px;
+  max-height: 24px;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  // The badge should be a circle or alike.
+  border-radius: 20px;
 
-.badge--profile img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
+  // By default, the badge should be a plain color from the themetic colors.
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: var(--color-m-dynamic-100);
+    color: #000000;
+  }
+
+  @media screen and (prefers-color-scheme: light) {
+    background-color: var(--color-m-dynamic-0);
+    color: #ffffff;
+  }
+
+
+  // Badge for specific use cases.
+  &--info {
+    @media screen and (prefers-color-scheme: dark) {
+      background-color: #3b82f6;
+      color: var(--color-m-dynamic-10);
+    }
+
+    @media screen and (prefers-color-scheme: light) {
+      background-color: #dbeafe;
+      color: var(--color-m-dynamic-90);
+    }
+  }
+
+  &--success {
+    @media screen and (prefers-color-scheme: dark) {
+      background-color: #d1fae5;
+      color: var(--color-m-dynamic-10);
+    }
+
+    @media screen and (prefers-color-scheme: light) {
+      background-color: #22c55e;
+      color: var(--color-m-dynamic-10);
+    }
+  }
+
+  &--warning {
+    @media screen and (prefers-color-scheme: dark) {
+      background-color: #f59e0b;
+      color: var(--color-m-dynamic-10);
+    }
+
+    @media screen and (prefers-color-scheme: light) {
+      background-color: #f3f3c7;
+      color: var(--color-m-dynamic-10);
+    }
+  }
+
+  &--danger {
+    @media screen and (prefers-color-scheme: dark) {
+      background-color: #ef4444;
+      color: var(--color-m-dynamic-10);
+    }
+
+    @media screen and (prefers-color-scheme: light) {
+      background-color: #fee2e2;
+      color: var(--color-m-dynamic-10);
+    }
+  }
+
+
+  // The badge should have a text variation.
+  &--with-text {
+    // Make the text in center.
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    // The badge with text should be on the same level but side should be on right more.
+    right: -8px;
+    // The badge with text should be larger than regular badge.
+    min-width: 24px;
+    min-height: 24px;
+    font-size: 14px;
+    font-weight: 600;
+  }
 }
