@@ -1,0 +1,31 @@
+// Using the following dependencies:
+@import "grid-fixed";
+
+
+// Set grid fixed to 2 columns.
+.grid-fixed-2--height {
+    @extend .grid-fixed-2;
+}
+
+// Set grid fixed to 3 columns.
+.grid-fixed-3--height {
+    @extend .grid-fixed-3;
+}
+
+// Set grid fixed to 4 columns.
+.grid-fixed-4--height {
+    @extend .grid-fixed-4;
+}
+
+// Set grid fixed to 5 columns.
+.grid-fixed-5--height {
+    @extend .grid-fixed-5;
+}
+
+// Set the card height to grid height.
+.grid-fixed-2--height,
+.grid-fixed-3--height,
+.grid-fixed-4--height,
+.grid-fixed-5--height {
+    align-items: stretch;
+}

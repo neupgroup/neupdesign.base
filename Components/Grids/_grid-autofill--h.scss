@@ -1,0 +1,44 @@
+// Import dependencies.
+@import "grid-autofill";
+
+
+// Set grid fixed to autofill 250px.
+.grid-fixed-250--h {
+    @extend .grid-fixed-250;
+}
+
+// Set grid fixed to autofill 300px.
+.grid-fixed-300--h {
+    @extend .grid-fixed-300;
+}
+
+// Set grid fixed to autofill 350px.
+.grid-fixed-350--h {
+    @extend .grid-fixed-350;
+}
+
+// Set grid fixed to autofill 400px.
+.grid-fixed-400--h {
+    @extend .grid-fixed-400;
+}
+
+// Set grid fixed to autofill 450px.
+.grid-fixed-450 {
+    @extend .grid-fixed-450;
+}
+
+// Set grid fixed to autofill 500px.
+.grid-fixed-500 {
+    @extend .grid-fixed-500;
+}
+
+
+// Set the card height to grid height.
+.grid-autofill-250--h,
+.grid-autofill-300--h,
+.grid-autofill-350--h,
+.grid-autofill-400--h,
+.grid-autofill-450--h,
+.grid-autofill-500--h {
+    align-items: stretch;
+}

@@ -1,0 +1,31 @@
+// Import depdendencies.
+@import "grid";
+
+
+// Set grid fixed to 2 columns.
+.grid-fixed-2 {
+  @extend .grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+// Set grid fixed to 3 columns.
+.grid-fixed-3 {
+  @extend .grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+
+// Set grid fixed to 4 columns.
+.grid-fixed-4 {
+  @extend .grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+}
+
+// Set grid fixed to 5 columns.
+.grid-fixed-5 {
+  @extend .grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+}

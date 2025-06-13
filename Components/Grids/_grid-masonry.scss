@@ -1,0 +1,24 @@
+// Import depdendencies.
+@import "grid";
+
+
+// Set a responsive masonry grid.
+.grid.grid-masonry {
+    @extend .grid;
+
+    @media (min-width: 1080px) {
+        column-count: 5;
+    }
+
+    @media (min-width: 768px) {
+        column-count: 4;
+    }
+
+    @media (min-width: 640px) {
+        column-count: 3;
+    }
+
+    @media (max-width: 639.99) {
+        column-count: 2;
+    }
+}
