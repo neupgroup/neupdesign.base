@@ -1310,6 +1310,16 @@ body > section:first-of-type {
   background-color: var(--color-n-transparent);
   transition: all 400ms ease;
 }
+.chip--small {
+  height: 24px;
+  max-height: 24px;
+  min-width: 32px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 12px;
+}
 .chip:hover {
   color: var(--color-m-dynamic-30);
   border-color: var(--color-m-dynamic-30);
@@ -1758,6 +1768,7 @@ button:disabled, button[aria-disabled=true], input[type=submit]:disabled, input[
 .card.card-article-1 .card__image-wrapper .card__image {
   width: 100%;
   height: auto;
+  max-height: 200px;
   /* Adjust height as needed */
   border-radius: 0;
   -o-object-fit: cover;
