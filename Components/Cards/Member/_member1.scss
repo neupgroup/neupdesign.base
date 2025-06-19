@@ -8,14 +8,6 @@
         border-radius: 16px;
         overflow: hidden;
 
-        @media screen and (prefers-color-scheme: dark) {
-            background-color: var(--color-m-dynamic-15);
-        }
-
-        @media screen and (prefers-color-scheme: light) {
-            background-color: var(--color-m-dynamic-85);
-        }
-
         .card__image {
             height: min-content;
             object-fit: cover;
@@ -40,6 +32,39 @@
             .card__image {
                 transform: scale(1.05);
                 transition: transform 300ms ease-in-out;
+            }
+        }
+    }
+}
+
+
+section.section:nth-of-type(even) {
+    .section__content {
+        .card.card-member-1 {
+            .card__image-wrapper {
+                @media screen and (prefers-color-scheme: dark) {
+                    background-color: var(--color-m-dynamic-30);
+                }
+
+                @media screen and (prefers-color-scheme: light) {
+                    background-color: var(--color-m-dynamic-70);
+                }
+            }
+        }
+    }
+}
+
+section.section:nth-of-type(odd) {
+    .section__content {
+        .card.card-member-1 {
+            .card__image-wrapper {
+                @media screen and (prefers-color-scheme: dark) {
+                    background-color: var(--color-m-dynamic-15);
+                }
+
+                @media screen and (prefers-color-scheme: light) {
+                    background-color: var(--color-m-dynamic-85);
+                }
             }
         }
     }
