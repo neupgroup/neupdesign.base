@@ -942,12 +942,12 @@ body section.section:nth-of-type(1) {
 
 @media (prefers-color-scheme: light) {
   section.section:nth-of-type(even) {
-    background-color: var(--color-m-dynamic-85);
+    background-color: var(--color-m-dynamic-90);
   }
 }
 @media (prefers-color-scheme: dark) {
   section.section:nth-of-type(even) {
-    background-color: var(--color-m-dynamic-15);
+    background-color: var(--color-m-dynamic-10);
   }
 }
 

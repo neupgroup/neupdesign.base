@@ -64,11 +64,11 @@ section.section:nth-of-type(odd) {
 // For even section.
 section.section:nth-of-type(even) {
 	@media (prefers-color-scheme: light) {
-		background-color: var(--color-m-dynamic-85);
+		background-color: var(--color-m-dynamic-90);
 	}
 
 	@media (prefers-color-scheme: dark) {
-		background-color: var(--color-m-dynamic-15);
+		background-color: var(--color-m-dynamic-10);
 	}
 }
 
