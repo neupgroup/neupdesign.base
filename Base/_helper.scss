@@ -32,11 +32,6 @@
 	}
 }
 
-// For first section of the page. Header space margin.
-body>section:first-of-type {
-	margin-top: 64px;
-}
-
 // For the body (to override).
 body {
 	@media (prefers-color-scheme: light) {
@@ -48,8 +43,15 @@ body {
 	}
 }
 
+// For first section of the page. Header space margin.
+body {
+	section.section:nth-of-type(1) {
+		margin-top: 64px;
+	}
+}
+
 // For odd section.
-section.section:nth-child(odd) {
+section.section:nth-of-type(odd) {
 	@media (prefers-color-scheme: light) {
 		background-color: var(--color-m-dynamic-95);
 	}
@@ -60,7 +62,7 @@ section.section:nth-child(odd) {
 }
 
 // For even section.
-section.section:nth-child(even) {
+section.section:nth-of-type(even) {
 	@media (prefers-color-scheme: light) {
 		background-color: var(--color-m-dynamic-85);
 	}
