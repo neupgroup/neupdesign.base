@@ -1459,47 +1459,47 @@ body section.section:nth-of-type(1) {
   grid-template-rows: auto;
 }
 
-.grid, .grid-fixed-500, .grid-fixed-450, .grid-fixed-400, .grid-fixed-400--h, .grid-fixed-350, .grid-fixed-350--h, .grid-fixed-300, .grid-fixed-300--h, .grid-fixed-250, .grid-fixed-250--h {
+.grid, .grid-fixed-500, .grid-autofill-500--height, .grid-fixed-450, .grid-autofill-450--height, .grid-fixed-400, .grid-autofill-400--height, .grid-fixed-350, .grid-autofill-350--height, .grid-fixed-300, .grid-autofill-300--height, .grid-fixed-250, .grid-autofill-250--height {
   display: grid;
   grid-gap: 16px;
 }
 
-.grid-fixed-250, .grid-fixed-250--h {
+.grid-fixed-250, .grid-autofill-250--height {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-template-rows: auto;
 }
 
-.grid-fixed-300, .grid-fixed-300--h {
+.grid-fixed-300, .grid-autofill-300--height {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: auto;
 }
 
-.grid-fixed-350, .grid-fixed-350--h {
+.grid-fixed-350, .grid-autofill-350--height {
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-template-rows: auto;
 }
 
-.grid-fixed-400, .grid-fixed-400--h {
+.grid-fixed-400, .grid-autofill-400--height {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-template-rows: auto;
 }
 
-.grid-fixed-450 {
+.grid-fixed-450, .grid-autofill-450--height {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   grid-template-rows: auto;
 }
 
-.grid-fixed-500 {
+.grid-fixed-500, .grid-autofill-500--height {
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   grid-template-rows: auto;
 }
 
-.grid-autofill-250--h,
-.grid-autofill-300--h,
-.grid-autofill-350--h,
-.grid-autofill-400--h,
-.grid-autofill-450--h,
-.grid-autofill-500--h {
+.grid-autofill-250--height,
+.grid-autofill-300--height,
+.grid-autofill-350--height,
+.grid-autofill-400--height,
+.grid-autofill-450--height,
+.grid-autofill-500--height {
   align-items: stretch;
 }
 
