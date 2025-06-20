@@ -1399,9 +1399,14 @@ body section.section:nth-of-type(1) {
   align-items: stretch;
 }
 
-.grid, .grid-autofill-500, .grid-autofill-450, .grid-autofill-400, .grid-autofill-350, .grid-autofill-300, .grid-autofill-250 {
+.grid, .grid-autofill-500, .grid-autofill-450, .grid-autofill-400, .grid-autofill-350, .grid-autofill-300, .grid-autofill-250, .grid-autofill-200 {
   display: grid;
   grid-gap: 16px;
+}
+
+.grid-autofill-200 {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: auto;
 }
 
 .grid-autofill-250 {

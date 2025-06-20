@@ -1,6 +1,12 @@
 // Import dependencies.
 @import "grid";
 
+// Set grid fixed to autofill 200px.
+.grid-autofill-200 {
+  @extend .grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: auto;
+}
 
 // Set grid fixed to autofill 250px.
 .grid-autofill-250 {
