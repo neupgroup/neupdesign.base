@@ -35,7 +35,7 @@
 // For the body (to override).
 body {
 	@media (prefers-color-scheme: light) {
-		background-color: var(--color-m-dynamic-95);
+		background-color: var(--color-m-dynamic-98);
 	}
 
 	@media (prefers-color-scheme: dark) {
@@ -53,7 +53,7 @@ body {
 // For odd section.
 section.section:nth-of-type(odd) {
 	@media (prefers-color-scheme: light) {
-		background-color: var(--color-m-dynamic-95);
+		background-color: var(--color-m-dynamic-98);
 	}
 
 	@media (prefers-color-scheme: dark) {
@@ -64,7 +64,7 @@ section.section:nth-of-type(odd) {
 // For even section.
 section.section:nth-of-type(even) {
 	@media (prefers-color-scheme: light) {
-		background-color: var(--color-m-dynamic-90);
+		background-color: var(--color-m-dynamic-95);
 	}
 
 	@media (prefers-color-scheme: dark) {
