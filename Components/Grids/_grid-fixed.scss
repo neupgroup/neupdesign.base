@@ -29,3 +29,12 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
 }
+
+
+// Set the card height to grid height.
+.grid-fixed-2--height,
+.grid-fixed-3--height,
+.grid-fixed-4--height,
+.grid-fixed-5--height {
+    align-items: stretch;
+}
