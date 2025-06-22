@@ -2544,6 +2544,29 @@ section.section-mission--1 .btn-container {
   gap: 16px;
 }
 
+section.section.section-information-1 .section__content {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+section.section.section-information-1 .section__content .section__information {
+  margin-top: 0;
+  width: 50%;
+}
+section.section.section-information-1 .section__content .section__information .button__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-top: 24px;
+}
+section.section.section-information-1 .section__content .section__media {
+  margin-top: 0;
+  max-width: 50%;
+}
+
 @media (prefers-color-scheme: light) {
   .section .section__title {
     color: var(--color-m-dynamic-15);
