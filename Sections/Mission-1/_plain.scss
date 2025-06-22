@@ -1,0 +1,42 @@
+section.section-mission--1 {
+    min-height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .section__content {
+        max-width: 550px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .section__title {
+        font-size: 3rem;
+
+        @media (min-width: 768px) {
+            font-size: 3.5rem;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: 3.8rem;
+        }
+    }
+
+    .section__description {
+        font-size: 1.125rem;
+
+        @media (min-width: 1024px) {
+            font-size: 1.3rem;
+        }
+    }
+
+    .btn-container {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+}
