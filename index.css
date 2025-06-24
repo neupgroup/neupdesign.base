@@ -2639,7 +2639,6 @@ section.section-mission--1 .btn-container {
   gap: 16px;
 }
 
-
 @media (prefers-color-scheme: light) {
   .section .section__title {
     color: var(--color-m-dynamic-15);
