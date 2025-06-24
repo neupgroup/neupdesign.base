@@ -1,19 +1,13 @@
-
 // Import sections.
-// Requiring JavaScript support.
-@forward "./Header-1/_javascript";
-@forward "./FAQ-1/_javascript";
-
-
-// Not requiring JavaScript support.
-@forward "./Hero-1/plain";
-@forward "./Cta-1/plain";
-@forward "./Footer-1/plain";
-@forward "./Form-1/plain";
-@forward "./Article-1/plain";
-@forward "./Info-1/plain";
-@forward "./Mission-1/plain";
-@forward "./FAQ-1/_javascript";
+@forward "./Header/index";
+@forward "./Hero/index";
+@forward "./CTA/index";
+@forward "./Footer/index";
+@forward "./Form/index";
+@forward "./Article/index";
+@forward "./Info/index";
+@forward "./Mission/index";
+@forward "./FAQ/index";
 
 
 // Styling for the sections.
