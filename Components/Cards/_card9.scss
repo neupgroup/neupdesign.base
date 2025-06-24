@@ -1,0 +1,80 @@
+.card.card-9 {
+  font-family: "Poppins";
+  padding: 40px 25px;
+  border-radius: 8px;
+  background: hsl(0, 0%, 12%);
+
+  @media (min-width: 768px) {
+    padding-inline: 40px;
+  }
+
+  @media (prefers-color-scheme: light) {
+    background: hsl(0, 0%, 90%);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background: hsl(0, 0%, 10%);
+  }
+
+  .card__tagline {
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      font-size: 1rem;
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 1.1rem;
+    }
+
+    @media (prefers-color-scheme: light) {
+      color: hsl(0, 0%, 25%);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      color: hsl(0, 0%, 85%);
+    }
+  }
+
+  .card__quote-description {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+    @media (min-width: 768px) {
+      margin-bottom: 40px;
+      font-size: 1.2rem;
+    }
+  }
+
+  .card__quote-cite {
+    display: block;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+    @media (min-width: 1024px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .card__quote-citer-position {
+    font-size: 0.9rem;
+
+    @media (min-width: 768px) {
+      font-size: 1rem;
+    }
+
+    @media (prefers-color-scheme: light) {
+      color: hsl(0, 0%, 25%);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      color: hsl(0, 0%, 85%);
+    }
+  }
+}
