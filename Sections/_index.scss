@@ -2,6 +2,7 @@
 // Import sections.
 // Requiring JavaScript support.
 @forward "./Header-1/_javascript";
+@forward "./FAQ-1/_javascript";
 
 
 // Not requiring JavaScript support.
@@ -12,7 +13,6 @@
 @forward "./Article-1/plain";
 @forward "./Info-1/plain";
 @forward "./Mission-1/plain";
-@forward "./Information/index";
 
 
 // Styling for the sections.

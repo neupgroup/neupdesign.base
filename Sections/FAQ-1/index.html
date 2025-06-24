@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../index.css" />
+    <script defer>
+      // function so that every other function only runs after dom-content is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        initFAQ();
+      });
+
+      // faq accordion initialize
+      function initFAQ() {
+        // selection
+        const faqs = document.querySelectorAll(".faq");
+        if (faqs.length === 0) return;
+        const activeClass = "active";
+
+        faqs.forEach((faq) => {
+          const faqItems = faq.querySelectorAll(".faq__item");
+          faqItems.forEach((item) => {
+            const question = item.querySelector(".faq__question");
+            const answer = item.querySelector(".faq__answer");
+
+            // click event on the faq question element
+            question.addEventListener("click", (e) => {
+              e.preventDefault();
+              // remove all activeClass from all the faq__item
+              faqItems.forEach((item) => item.classList.remove(activeClass));
+              // add activeClass to the faq__item whose question is clicked
+              item.classList.add(activeClass);
+            });
+
+            // calculate answer-content height
+            function calcAnswerContentHeight() {
+              const answerContent = answer.querySelector(
+                ".faq__answer-content"
+              );
+              const answerContentHeight = answerContent.clientHeight;
+
+              // set property to faq__item for the answerContentHeight
+              item.style.setProperty(
+                "--answerContentHeight",
+                `${answerContentHeight}px`
+              );
+            }
+
+            // call calcAnswerContentHeight function when window resizes
+            window.addEventListener("resize", calcAnswerContentHeight);
+          });
+        });
+      }
+    </script>
+  </head>
+  <body class="majorSecond">
+    <section class="section section-faq section-faq--1">
+      <div class="container">
+        <h2 class="section__title">Frequently Asked Questions</h2>
+        <div class="section__content">
+          <div class="faq-container">
+            <div class="faq">
+              <div class="faq__item active">
+                <button class="faq__question">
+                  <h3>Is your music royalty-free?</h3>
+                </button>
+                <div class="faq__answer">
+                  <div class="faq__answer-content">
+                    <p>
+                      Yes! The music and sound effects on Epidemic Sound are
+                      royalty-free, meaning you can use them in your content
+                      without having to pay royalties to the artists or rights
+                      holders when the music is played. In fact, we set
+                      ourselves apart with an innovative license model that is
+                      even better than royalty-free. We own all rights to our
+                      music and can offer users a direct license with all rights
+                      included, globally.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question">
+                  <h3>What are my licensing optinos and how am I covered?</h3>
+                </button>
+                <div class="faq__answer">
+                  <div class="faq__answer-content">
+                    <p>
+                      Yes! The music and sound effects on Epidemic Sound are
+                      royalty-free, meaning you can use them in your content
+                      without having to pay royalties to the artists or rights
+                      holders when the music is played. In fact, we set
+                      ourselves apart with an innovative license model that is
+                      even better than royalty-free. We own all rights to our
+                      music and can offer users a direct license with all rights
+                      included, globally.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question">
+                  <h3>How will you keep me safe from copyright issues?</h3>
+                </button>
+                <div class="faq__answer">
+                  <div class="faq__answer-content">
+                    <p>
+                      Yes! The music and sound effects on Epidemic Sound are
+                      royalty-free, meaning you can use them in your content
+                      without having to pay royalties to the artists or rights
+                      holders when the music is played. In fact, we set
+                      ourselves apart with an innovative license model that is
+                      even better than royalty-free. We own all rights to our
+                      music and can offer users a direct license with all rights
+                      included, globally.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question">
+                  <h3>What happens after I cancel?</h3>
+                </button>
+                <div class="faq__answer">
+                  <div class="faq__answer-content">
+                    <p>
+                      Yes! The music and sound effects on Epidemic Sound are
+                      royalty-free, meaning you can use them in your content
+                      without having to pay royalties to the artists or rights
+                      holders when the music is played. In fact, we set
+                      ourselves apart with an innovative license model that is
+                      even better than royalty-free. We own all rights to our
+                      music and can offer users a direct license with all rights
+                      included, globally.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question">
+                  <h3>Can I use it for free?</h3>
+                </button>
+                <div class="faq__answer">
+                  <div class="faq__answer-content">
+                    <p>
+                      Yes! The music and sound effects on Epidemic Sound are
+                      royalty-free, meaning you can use them in your content
+                      without having to pay royalties to the artists or rights
+                      holders when the music is played. In fact, we set
+                      ourselves apart with an innovative license model that is
+                      even better than royalty-free. We own all rights to our
+                      music and can offer users a direct license with all rights
+                      included, globally.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
