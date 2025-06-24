@@ -1,5 +1,5 @@
 // Card 4 Styles
-.card.card-member-1 {
+.card.card-5 {
     .card__image-wrapper {
         display: flex;
         flex-direction: column;
@@ -56,7 +56,7 @@ section.section:nth-of-type(even) {
 
 section.section:nth-of-type(odd) {
     .section__content {
-        .card.card-member-1 {
+        .card.card-5 {
             .card__image-wrapper {
                 @media screen and (prefers-color-scheme: dark) {
                     background-color: var(--color-m-dynamic-15);
